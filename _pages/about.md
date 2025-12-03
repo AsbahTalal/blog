@@ -7,7 +7,7 @@ author_profile: true
 
 ## Hey there!
 
-My name is Asbah Talal and I am an 11th grader from Oklahoma, USA. In school, I am Coding Club Founder, former Technology Student Association President, and staff writer for the school newspaper. 
+My name is Asbah Talal and I am an college freshman from Oklahoma, USA. I go to Texas A&M University with hopes of completing my Mechanical Engineering degree. 
 
 I'm interested in 
 - math, science, and programming, particularly physics 
