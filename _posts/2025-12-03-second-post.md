@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Long Awaited Update!"
+title: "Long Awaited Update!!"
 date: 2025-12-03 18:26:50 +00:00
 author_profile: true
 header: 
@@ -13,7 +13,6 @@ categories: Personal
 "Embrace the uncertainty, for it is the herald of destined paths."
 
 ## Second Post
-So I just made a blog using Github Pages and Jekyll. This was my first time using Github, but I think I've gotten the gist of it. As a somewhat newcomer, I did face some challenges. Understanding the purpose of most files was one puzzle I had to solve. The `_config.yml` file, for example, played a crucial role in configuring my entire site. It took some trial and error to get everything just right, but it was rewarding when I saw my changes come to life on the site. Watching tutorials, reading documentation, and seeking help from the web really does help. 
 
 There were moments of frustration with the CSS code, but the feeling of satisfaction when I finally brought an idea to life was unparalleled. Honestly, that's why coding is so cool. I am definitely happy with the end product, but I think it would be cool to add a comments section or a gallery page to share my work. We'll see. Hopefully the time spent making this site proves to be worth it.
 
