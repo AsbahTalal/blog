@@ -8,16 +8,10 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Desktop + general */
-.site-logo img {
-  height: auto;
-}
-
-/* Mobile: force a smaller width */
 @media (max-width: 600px) {
-  .site-logo img {
-    width: 140px;   /* tweak this number until it looks right */
+  .greedy-nav img {
+    max-width: 120px !important;
   }
 }
-/*hhu
+
 
