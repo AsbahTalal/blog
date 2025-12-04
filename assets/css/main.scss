@@ -9,9 +9,9 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 @media (max-width: 600px) {
-  .greedy-nav img {
-    max-width: 50px !important;
+  .greedy-nav img[src$="logo.png"] {
+    width: 70px !important;
+    height: auto !important;
   }
 }
-
 
