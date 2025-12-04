@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Long Awaited Update!!"
+title: "Long Awaited Update!"
 date: 2025-12-03 18:26:50 +00:00
 author_profile: true
 header: 
