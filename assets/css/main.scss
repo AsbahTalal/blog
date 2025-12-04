@@ -8,7 +8,15 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Desktop + general */
 .site-logo img {
-  width: auto;
   height: auto;
 }
+
+/* Mobile: force a smaller width */
+@media (max-width: 600px) {
+  .site-logo img {
+    width: 140px;   /* tweak this number until it looks right */
+  }
+}
+
