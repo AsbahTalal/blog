@@ -1,7 +1,7 @@
 ---
 layout: splash
-title: BGM
-permalink: /bgm/
+title: Projects
+permalink: /projects/
 author_profile: true 
 
 feature_row:
