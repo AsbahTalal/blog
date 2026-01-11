@@ -1,0 +1,30 @@
+name: Build and Deploy to GitHub Pages
+on: { push: { branches: [master] } }
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-24.04
+    env:
+      JEKYLL_ENV: production
+      JEKYLL_NO_GITHUB_METADATA: "true"   
+      SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y ca-certificates openssl
+          sudo update-ca-certificates
+          echo "SSL_CERT_DIR=" >> $GITHUB_ENV
+          echo "OPENSSL_CONF=" >> $GITHUB_ENV
+      - uses: ruby/setup-ruby@v1
+        with: { ruby-version: '3.2', bundler-cache: true }
+      - run: |
+          gem install bundler
+          bundle config set path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - uses: jeffreytse/jekyll-deploy-action@master
+        with:
+          provider: github
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          jekyll_src: ./
+          jekyll_cfg: _config.yml
