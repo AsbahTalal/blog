@@ -7,7 +7,7 @@ author_profile: true
 
 ## Hey there!
 
-My name is Asbah Talal and I am an college freshman from Oklahoma, USA. I go to Texas A&M University with hopes of completing my Mechanical Engineering degree. 
+My name is Asbah and I am a first year Mechanical Engineering student from Oklahoma, attending Texas A&M University. 
 
 I'm interested in 
 - math, science, and programming, particularly physics 
