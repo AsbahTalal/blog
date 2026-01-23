@@ -1,15 +1,17 @@
 ---
 layout: single
 title: "Jekyll and Github Pages"
-date: 2023-07-18 18:26:50 +00:00
+date: 2021-07-18 18:26:50 +00:00
 author_profile: true
 header: 
   image: /assets/images/lake.png
-  #caption: "Photo credit: [**Asbah**](https://unsplash.com/photos/5ddKJB6fgTQ)"
+  teaser: /assets/images/lake.png
+  caption: "Photo credit: "
 toc: true
 toc_sticky: true
 categories: Personal
 ---
+
 "Have patience. All things are difficult before they are easy."
 
 ## First Post

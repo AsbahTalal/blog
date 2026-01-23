@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       JEKYLL_ENV: production
-      JEKYLL_NO_GITHUB_METADATA: "true"   
+      JEKYLL_NO_GITHUB_METADATA: "true"   # stop jekyll-github-metadata hitting GitHub
       SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
     steps:
       - uses: actions/checkout@v4
