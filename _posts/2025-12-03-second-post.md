@@ -1,15 +1,16 @@
 ---
 layout: single
 title: "Long Awaited Update!"
-date: 2025-12-03 18:26:50 +00:00
+date: 2025-12-03 18:26:50 +0000
+categories: Personal
 author_profile: true
-header: 
+header:
   image: /assets/images/lake.png
-  #caption: "Photo credit: [**Asbah**](https://unsplash.com/photos/5ddKJB6fgTQ)"
+  teaser: /assets/images/lake.png
 toc: true
 toc_sticky: true
-categories: Personal
 ---
+
 "Embrace the uncertainty, for it is the herald of destined paths."
 
 ## Second Post

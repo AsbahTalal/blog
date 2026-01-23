@@ -1,61 +1,44 @@
 ---
 layout: splash
 title: Projects
-permalink: /Projects/
-# author_profile: true 
+permalink: /projects/
+author_profile: true
+
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.35"
+  overlay_image: /assets/images/lake.png
+  caption: ""
+
+intro:
+  - excerpt: "A few things I’ve built / worked on. (More coming soon.)"
 
 feature_row:
-  - image_path: assets/images/wiibowling.jpg
-    image_caption: "Credit to [**Friendly Family Gaming**](https://www.familyfriendlygaming.com/Images/2013/Wii%20Sports%20Club.html)"
-    alt: "placeholder image 1"
-    title: "Rapp Snitch Knishes"
-    url: "https://www.youtube.com/watch?v=gQtKJbptcns"
-    btn_label: "Listen"
-    btn_class: "btn--primary"
-    
-  - image_path: assets/images/anatolia.jpg
-    image_caption: "Credit to Feed Me Jack"
-    alt: "placeholder image 1"
-    title: "Feed Me Jack - Anatolia"
-    url: "https://www.youtube.com/watch?v=7E8U6zqgPwM"
-    btn_label: "Listen"
-    btn_class: "btn--primary"
-    
-  - image_path: assets/images/ghibli.jpg
-    image_caption: "Credit to Studio Ghibli"
-    alt: "placeholder image 1"
-    title: "Studio Ghibli"
-    url: "https://www.youtube.com/watch?v=PHklnuOvxfg"
-    btn_label: "Listen"
+  - image_path: /assets/images/wiibowling.jpg
+    alt: "Project card"
+    title: "MediaPipe → Arduino LED Tracker"
+    excerpt: "Computer vision hand tracking that drives LED patterns."
+    url: "https://github.com/AsbahTalal"
+    btn_label: "View"
     btn_class: "btn--primary"
 
-feature_row2:
-  - image_path: assets/images/conan.jpg
-    image_caption: "Credit to TMS Entertainment"
-    alt: "placeholder image 1"
-    title: "Detective Conan"
-    url: "https://www.youtube.com/watch?v=yvcGqTaDIi0"
-    btn_label: "Listen"
-    btn_class: "btn--primary"
-  
-  - image_path: assets/images/fossilfalls2.jpg
-    image_caption: "Credit to Me"
-    alt: "placeholder image 1"
-    title: "Bobbing - Crimes"
-    url: "https://www.youtube.com/watch?v=XIWr7fykSmY"
-    btn_label: "Listen"
+  - image_path: /assets/images/anatolia.jpg
+    alt: "Project card"
+    title: "Personal Website (Jekyll + GitHub Pages)"
+    excerpt: "Built and customized a Minimal Mistakes blog with archives + styling."
+    url: "https://asbahtalal.github.io/blog/"
+    btn_label: "Visit"
     btn_class: "btn--primary"
 
-  - image_path: assets/images/maple.jpg
-    image_caption: "Credit to MapleStory"
-    alt: "placeholder image 1"
-    title: "MapleStory"
-    url: "https://www.youtube.com/watch?v=Wp8t19rzsGo"
-    btn_label: "Listen"
+  - image_path: /assets/images/ghibli.jpg
+    alt: "Project card"
+    title: "More Projects Coming"
+    excerpt: "I’m actively building—this section will keep growing."
+    url: "/posts/"
+    btn_label: "See posts"
     btn_class: "btn--primary"
-
 ---
 
-{% include feature_row %}
+{% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="feature_row2" %}
+{% include feature_row %}
