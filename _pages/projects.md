@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Projects
-permalink: /projects/
+permalink: /blog/projects/
 author_profile: true
 
 header:
