@@ -14,13 +14,10 @@ intro:
   - excerpt: "A few things I’ve built / worked on. (More coming soon.)"
 
 feature_row:
-  - image_path: /assets/images/wiibowling.jpg
-    alt: "Project card"
-    title: "MediaPipe → Arduino LED Tracker"
-    excerpt: "Computer vision hand tracking that drives LED patterns."
-    url: "https://github.com/AsbahTalal"
-    btn_label: "View"
-    btn_class: "btn--primary"
+  - image_path: /assets/images/DRON-poster.png
+    alt: "Research Poster"
+    title: "Research Poster"
+    excerpt: "Disaster Response Observation Network (DRON)"
 
   - image_path: /assets/images/anatolia.jpg
     alt: "Project card"
