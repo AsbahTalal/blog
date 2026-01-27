@@ -12,28 +12,36 @@ header:
 
 feature_row:
   - image_path: /assets/images/DRON-poster.png
-    alt: "Research Poster"
-    title: "Research Poster"
+    alt: "DRON Poster"
+    title: "DRON Poster"
     excerpt: "Disaster Response Observation Network (DRON)"
     # url: ""         # optional: link to a post/page about it
     # btn_label: ""   # optional
     # btn_class: ""   # optional
 
-  - image_path: /assets/images/anatolia.jpg
-    alt: "Project card"
+  - image_path: /assets/images/datascience.png
+    alt: "Data Science Poster 2025"
     title: "Personal Website (Jekyll + GitHub Pages)"
     excerpt: "Built and customized a Minimal Mistakes blog with archives + styling."
-    url: "https://asbahtalal.github.io/blog/"
+    #url: "https://asbahtalal.github.io/blog/"
+    #btn_label: "Visit"
+    #btn_class: "btn--primary"
+
+  - image_path: /assets/images/IMG_3772.png
+    alt: "Cubes in Space"
+    title: "Cubes in Space"
+    excerpt: "I’m actively building—this section will keep growing."
+    url: "https://www.news9.com/story/64792306ef8f937d63ce0beb/oklahoma-teens-prepare-to-send-their-experiment-into-space"
     btn_label: "Visit"
     btn_class: "btn--primary"
-
-  - image_path: /assets/images/ghibli.jpg
-    alt: "Project card"
-    title: "More Projects Coming"
+  
+  - image_path: /assets/images/IMG_3772.png
+    alt: "Cubes in Space"
+    title: "Cubes in Space"
     excerpt: "I’m actively building—this section will keep growing."
-    url: "{{ site.baseurl }}/posts/"
-    btn_label: "See posts"
-    btn_class: "btn--primary"
+    #url: "https://www.news9.com/story/64792306ef8f937d63ce0beb/oklahoma-teens-prepare-to-send-their-experiment-into-space"
+    #btn_label: "Visit"
+    #btn_class: "btn--primary"
 ---
 
 A few things I’ve built / worked on. (More coming soon.)
