@@ -51,6 +51,14 @@ feature_row:
     #btn_label: "Visit"
     #btn_class: "btn--primary"
 
+  - image_path: /assets/images/datascience2.png
+    alt: "Data Science Poster 2023"
+    title: "Data Science Poster 2023"
+    excerpt: "Data-driven analysis of criminalization impacts using real-world datasets and statistical methods"
+    #url: "https://asbahtalal.github.io/blog/"
+    #btn_label: "Visit"
+    #btn_class: "btn--primary"
+
   
 ---
 
