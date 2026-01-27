@@ -21,8 +21,8 @@ feature_row:
 
   - image_path: /assets/images/datascience.png
     alt: "Data Science Poster 2025"
-    title: "Personal Website (Jekyll + GitHub Pages)"
-    excerpt: "Built and customized a Minimal Mistakes blog with archives + styling."
+    title: "Data Science Poster 2025"
+    excerpt: "Data-driven analysis of urban infrastructure impacts using real-world datasets and statistical methods"
     #url: "https://asbahtalal.github.io/blog/"
     #btn_label: "Visit"
     #btn_class: "btn--primary"
@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/IMG_3772.jpg
     alt: "Cubes in Space"
     title: "Cubes in Space"
-    excerpt: "I’m actively building—this section will keep growing."
+    excerpt: "Selected payload project flown to space, focused on rf transeivers."
     url: "https://www.news9.com/story/64792306ef8f937d63ce0beb/oklahoma-teens-prepare-to-send-their-experiment-into-space"
     btn_label: "Visit"
     btn_class: "btn--primary"
@@ -45,11 +45,13 @@ feature_row:
 
   - image_path: /assets/images/IMG_0203
     alt: "WIRED AUV Robotics"
-    title: "WIRED AUV Robotics"
-    excerpt: "An Autonomous Underwater Vehicle"
+    title: "WIRED AUV Robotics Programming/Electrical"
+    excerpt: "Autonomous underwater vehicle built for sensing and navigation"
     #url: "https://devpost.com/software/kinect-bgufmc"
     #btn_label: "Visit"
     #btn_class: "btn--primary"
+
+  
 ---
 
 A few things I’ve built / worked on. (More coming soon.)
