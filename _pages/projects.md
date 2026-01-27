@@ -35,7 +35,7 @@ feature_row:
     btn_label: "Visit"
     btn_class: "btn--primary"
   
-  - image_path: /assets/images/IMG_3772.jpg
+  - image_path: /assets/images/kinect_mockup.png
     alt: "Kinect"
     title: "Kinect"
     excerpt: "TAMU Ideathon - Winner for Best UI/UX"
