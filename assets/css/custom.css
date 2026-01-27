@@ -27,7 +27,7 @@ img[src*="datascience2.png"] {
 }
 
 .masthead .site-logo img {
-  height: 40px;                   /* lock height */
+  height: 60px;                   /* lock height */
   width: auto;                    /* preserve aspect ratio */
   max-height: 40px;
   max-width: 160px;
@@ -38,8 +38,8 @@ img[src*="datascience2.png"] {
 /* Smaller logo on phones */
 @media (max-width: 480px) {
   .masthead .site-logo img {
-    height: 32px;
-    max-height: 32px;
+    height: 40px;
+    max-height: 40px;
     max-width: 140px;
   }
 }
