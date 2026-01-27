@@ -62,8 +62,7 @@ created logo animation
 }
 
 #intro-overlay img {
-  height: 60vh;
-  max-height: 600px;
-  width: auto;
-  object-fit: contain;
+  width: 100vw;        /* FULL screen width */
+  height: 100vh;       /* FULL screen height */
+  object-fit: contain; /* keep aspect ratio */
 }
