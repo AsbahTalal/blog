@@ -43,7 +43,7 @@ feature_row:
     btn_label: "Visit"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/IMG_0203
+  - image_path: /assets/images/IMG_0203.jpg
     alt: "WIRED AUV Robotics"
     title: "WIRED AUV Robotics Programming/Electrical"
     excerpt: "Autonomous underwater vehicle built for sensing and navigation"
