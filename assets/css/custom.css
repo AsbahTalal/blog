@@ -45,16 +45,14 @@ img[src*="datascience2.png"] {
 }
 
 /* =========================
-   Centered intro logo animation
+created logo animation
    ========================= */
-/* =========================
-   FULL-SCREEN INTRO OVERLAY
-   ========================= */
+
 #intro-overlay {
   position: fixed;
   inset: 0;
   min-height: 100vh;
-  background: black;     /* change to transparent if desired */
+  background: black;     /* can change to transparent */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,8 +62,8 @@ img[src*="datascience2.png"] {
 }
 
 #intro-overlay img {
-  width: 240px;
-  max-width: 80vw;
-  height: auto;
+  height: 60vh;
+  max-height: 600px;
+  width: auto;
   object-fit: contain;
 }
