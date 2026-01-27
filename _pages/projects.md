@@ -36,12 +36,12 @@ feature_row:
     btn_class: "btn--primary"
   
   - image_path: /assets/images/IMG_3772.jpg
-    alt: "Cubes in Space"
-    title: "Cubes in Space"
-    excerpt: "I’m actively building—this section will keep growing."
-    #url: "https://www.news9.com/story/64792306ef8f937d63ce0beb/oklahoma-teens-prepare-to-send-their-experiment-into-space"
-    #btn_label: "Visit"
-    #btn_class: "btn--primary"
+    alt: "Kinect"
+    title: "Kinect"
+    excerpt: "TAMU Ideathon - Winner for Best UI/UX"
+    url: "https://devpost.com/software/kinect-bgufmc"
+    btn_label: "Visit"
+    btn_class: "btn--primary"
 ---
 
 A few things I’ve built / worked on. (More coming soon.)
