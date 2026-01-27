@@ -3,3 +3,12 @@ img[src*="datascience2.png"] {
   margin: 0 auto;
   display: block;
 }
+
+
+/* FULL-SCREEN header ONLY for Projects page */
+.page--projects .page__hero--overlay {
+  min-height: 100vh;              /* full screen */
+  background-size: contain;       /* show entire image */
+  background-repeat: no-repeat;
+  background-position: center;
+}
