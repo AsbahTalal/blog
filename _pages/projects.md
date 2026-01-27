@@ -27,7 +27,7 @@ feature_row:
     #btn_label: "Visit"
     #btn_class: "btn--primary"
 
-  - image_path: /assets/images/IMG_3772.png
+  - image_path: /assets/images/IMG_3772.jpg
     alt: "Cubes in Space"
     title: "Cubes in Space"
     excerpt: "I’m actively building—this section will keep growing."
