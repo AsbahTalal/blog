@@ -1,3 +1,6 @@
+/* =========================
+   Feature row: shrink ONLY datascience2 image
+   ========================= */
 img[src*="datascience2.png"] {
   max-width: 70%;
   margin: 0 auto;
@@ -5,7 +8,9 @@ img[src*="datascience2.png"] {
 }
 
 
-/* FULL-SCREEN header ONLY for Projects page */
+/* =========================
+   Projects page: full-screen hero header
+   ========================= */
 .page--projects .page__hero--overlay {
   min-height: 100vh;              /* full screen */
   background-size: contain;       /* show entire image */
@@ -14,21 +19,27 @@ img[src*="datascience2.png"] {
 }
 
 
-/*logo*/
-/* Fix stretched logo on mobile */
-.masthead__menu-item img,
-.masthead__logo img {
-  height: 40px;          /* consistent size */
-  width: auto;           /* prevent stretching */
-  max-height: 40px;
-  object-fit: contain;   /* preserve aspect ratio */
+/* =========================
+   Fix masthead logo stretching (ALL devices)
+   ========================= */
+.masthead .site-logo {
+  flex: 0 0 auto;                 /* stop flex stretching */
 }
 
-/* Slightly smaller on very small screens */
+.masthead .site-logo img {
+  height: 40px;                   /* lock height */
+  width: auto;                    /* preserve aspect ratio */
+  max-height: 40px;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Smaller logo on phones */
 @media (max-width: 480px) {
-  .masthead__menu-item img,
-  .masthead__logo img {
+  .masthead .site-logo img {
     height: 32px;
     max-height: 32px;
+    max-width: 140px;
   }
 }
