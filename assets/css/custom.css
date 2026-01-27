@@ -44,25 +44,22 @@ img[src*="datascience2.png"] {
   }
 }
 
-
-
-
-
 /* =========================
    Centered intro logo animation
    ========================= */
 #logo-intro {
-  position: fixed;           /* stays centered on screen */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999;             /* above everything */
-  pointer-events: none;     /* doesn't block clicks */
+  z-index: 9999;
+  pointer-events: none;
 }
 
 #logo-intro img {
-  width: 220px;              /* adjust to taste */
+  width: 220px;
+  max-width: 70vw;
   height: auto;
-  max-width: 70vw;           /* responsive */
   object-fit: contain;
 }
+

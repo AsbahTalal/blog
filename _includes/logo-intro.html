@@ -1,3 +1,15 @@
-<div id="logo-intro">
+<div id="intro-overlay">
   <img src="{{ site.baseurl }}/assets/images/logovid.gif" alt="Logo animation">
 </div>
+
+<script>
+  // Lock scrolling while intro plays
+  document.body.style.overflow = "hidden";
+
+  // Remove intro after GIF finishes (adjust time)
+  setTimeout(() => {
+    const overlay = document.getElementById("intro-overlay");
+    if (overlay) overlay.remove();
+    document.body.style.overflow = "";
+  }, 4000); // ← change to your GIF length in ms
+</script>
