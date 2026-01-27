@@ -1,0 +1,34 @@
+img[src*="datascience2.png"] {
+  max-width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* FULL-SCREEN header ONLY for Projects page */
+.page--projects .page__hero--overlay {
+  min-height: 100vh;              /* full screen */
+  background-size: contain;       /* show entire image */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/*logo*/
+/* Fix stretched logo on mobile */
+.masthead__menu-item img,
+.masthead__logo img {
+  height: 40px;          /* consistent size */
+  width: auto;           /* prevent stretching */
+  max-height: 40px;
+  object-fit: contain;   /* preserve aspect ratio */
+}
+
+/* Slightly smaller on very small screens */
+@media (max-width: 480px) {
+  .masthead__menu-item img,
+  .masthead__logo img {
+    height: 32px;
+    max-height: 32px;
+  }
+}
