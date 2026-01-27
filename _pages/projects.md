@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Projects
-permalink: /blog/projects/
+permalink: /projects/
 author_profile: true
 
 header:
@@ -10,14 +10,14 @@ header:
   overlay_image: /assets/images/lake.png
   caption: ""
 
-intro:
-  - excerpt: "A few things I’ve built / worked on. (More coming soon.)"
-
 feature_row:
   - image_path: /assets/images/DRON-poster.png
     alt: "Research Poster"
     title: "Research Poster"
     excerpt: "Disaster Response Observation Network (DRON)"
+    # url: ""         # optional: link to a post/page about it
+    # btn_label: ""   # optional
+    # btn_class: ""   # optional
 
   - image_path: /assets/images/anatolia.jpg
     alt: "Project card"
@@ -31,11 +31,11 @@ feature_row:
     alt: "Project card"
     title: "More Projects Coming"
     excerpt: "I’m actively building—this section will keep growing."
-    url: "/posts/"
+    url: "{{ site.baseurl }}/posts/"
     btn_label: "See posts"
     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
+A few things I’ve built / worked on. (More coming soon.)
 
 {% include feature_row %}
