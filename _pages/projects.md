@@ -7,7 +7,7 @@ author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.35"
-  overlay_image: /assets/images/lake.png
+  overlay_image: /assets/images/IMG_0801 (1).jpg
   caption: ""
 
 feature_row:
@@ -42,6 +42,14 @@ feature_row:
     url: "https://devpost.com/software/kinect-bgufmc"
     btn_label: "Visit"
     btn_class: "btn--primary"
+
+  - image_path: /assets/images/IMG_0203
+    alt: "WIRED AUV Robotics"
+    title: "WIRED AUV Robotics"
+    excerpt: "An Autonomous Underwater Vehicle"
+    #url: "https://devpost.com/software/kinect-bgufmc"
+    #btn_label: "Visit"
+    #btn_class: "btn--primary"
 ---
 
 A few things I’ve built / worked on. (More coming soon.)
