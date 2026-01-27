@@ -47,19 +47,25 @@ img[src*="datascience2.png"] {
 /* =========================
    Centered intro logo animation
    ========================= */
-#logo-intro {
+/* =========================
+   FULL-SCREEN INTRO OVERLAY
+   ========================= */
+#intro-overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  pointer-events: none;
+  inset: 0;
+  min-height: 100vh;
+  background: black;     /* change to transparent if desired */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  pointer-events: all;
+  overflow: hidden;
 }
 
-#logo-intro img {
-  width: 220px;
-  max-width: 70vw;
+#intro-overlay img {
+  width: 240px;
+  max-width: 80vw;
   height: auto;
   object-fit: contain;
 }
-

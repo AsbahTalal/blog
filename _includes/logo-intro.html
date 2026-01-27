@@ -3,13 +3,11 @@
 </div>
 
 <script>
-  // Lock scrolling while intro plays
   document.body.style.overflow = "hidden";
 
-  // Remove intro after GIF finishes (adjust time)
   setTimeout(() => {
     const overlay = document.getElementById("intro-overlay");
     if (overlay) overlay.remove();
     document.body.style.overflow = "";
-  }, 4000); // ← change to your GIF length in ms
+  }, 4000); // 4 seconds — matches your GIF
 </script>
