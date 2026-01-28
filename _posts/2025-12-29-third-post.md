@@ -10,3 +10,5 @@ header:
 toc: true
 toc_sticky: true
 ---
+
+“There’ll be others. To the others, all of them.” — Peaky Blinders
