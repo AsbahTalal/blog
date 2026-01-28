@@ -5,7 +5,7 @@ date: 2023-07-19 18:26:50 +0000
 categories: Personal
 author_profile: true
 header:
-  image: /assets/images/yag.jpg
+  image: /assets/images/yag.JPG
   teaser: /assets/images/lake.png
 toc: true
 toc_sticky: true
