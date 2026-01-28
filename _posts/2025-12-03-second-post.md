@@ -6,7 +6,7 @@ categories: Personal
 author_profile: true
 header:
   image: /assets/images/beach.jpg
-  teaser: /assets/images/bday.jpg
+  teaser: /assets/images/me-beach.jpg
 toc: true
 toc_sticky: true
 ---

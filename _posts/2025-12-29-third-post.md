@@ -6,7 +6,7 @@ categories: Personal
 author_profile: true
 header:
   image: /assets/images/basketball.jpg
-  teaser: /assets/images/lake.png
+  teaser: /assets/images/basketball.jpg
 toc: true
 toc_sticky: true
 ---
