@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Long Awaited Update!"
+title: "What we call luck"
 date: 2025-12-29 18:26:50 +0000
 categories: Personal
 author_profile: true
