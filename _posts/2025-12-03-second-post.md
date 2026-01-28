@@ -5,7 +5,7 @@ date: 2025-12-03 18:26:50 +0000
 categories: Personal
 author_profile: true
 header:
-  image: /assets/images/me-beach.jpb
+  image: /assets/images/bday.jpg
   teaser: /assets/images/beach.jpg
 toc: true
 toc_sticky: true
