@@ -5,8 +5,8 @@ date: 2025-12-03 18:26:50 +0000
 categories: Personal
 author_profile: true
 header:
-  image: /assets/images/lake.png
-  teaser: /assets/images/lake.png
+  image: /assets/images/me-beach.jpb
+  teaser: /assets/images/beach.jpg
 toc: true
 toc_sticky: true
 ---
@@ -15,11 +15,9 @@ toc_sticky: true
 
 ## Second Post
 
-There were moments of frustration with the CSS code, but the feeling of satisfaction when I finally brought an idea to life was unparalleled. Honestly, that's why coding is so cool. I am definitely happy with the end product, but I think it would be cool to add a comments section or a gallery page to share my work. We'll see. Hopefully the time spent making this site proves to be worth it.
+If you can't tell from the date of my last post, I haven't even touched this website in so long. So much has happened since my last post. My 18th Birthday, The end of many things. High School Graduation. And now college.
 
-My key takeaway from working with Jekyll is that it's a powerful and flexible static site generator that streamlines the process of building and maintaining a blog or website. It is so easy to make a new post. While there were some initial challenges in understanding the file structure and configuration, the learning curve was well worth it. Jekyll's simplicity and the ability to write content in Markdown made it an ideal choice for my blog. 
-
-## Summer So Far
+## Quick Recap
 Summer has been fun yet productive. I am usually out volunteering at places, hanging with friends, or studying. I have also gotten the chance to focus more on fencing and art. One of the cool things I got to work on this summer was an experiment for Cubes in Space. It contained a report about the effects space radiation would potentially have on a RF transceiver and light sensor. Out of hundreds of teams internationally, my team was one of the few who got selected. That means our experiment will actually go into space! 
 
 Speaking of space, I had a once-in-a-lifetime encounter with greatness when I met Apollo astronaut Fred Haise in person! The moment was absolutely surreal, and hearing his incredible stories ignited a spark of inspiration within me. It's a memory I'll cherish forever and a reminder of the vast possibilities that lie beyond our planet.
