@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "What we call luck"
+title: "What We Call Luck"
 date: 2025-12-29 18:26:50 +0000
 categories: Personal
 author_profile: true
