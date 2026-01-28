@@ -5,8 +5,8 @@ date: 2025-12-03 18:26:50 +0000
 categories: Personal
 author_profile: true
 header:
-  image: /assets/images/bday.jpg
-  teaser: /assets/images/beach.jpg
+  image: /assets/images/beach.jpg
+  teaser: /assets/images/bday.jpg
 toc: true
 toc_sticky: true
 ---
