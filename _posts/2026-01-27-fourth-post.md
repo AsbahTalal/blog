@@ -6,7 +6,7 @@ categories: Personal
 author_profile: true
 header:
   image: /assets/images/turtle-2.jpg
-  teaser: /assets/images/turtle-2.jpg
+  teaser: /assets/images/football.jpg
 toc: true
 toc_sticky: true
 ---
