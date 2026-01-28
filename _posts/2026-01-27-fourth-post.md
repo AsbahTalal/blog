@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Long Awaited Update!"
+title: "Back"
 date: 2026-01-27 18:26:50 +0000
 categories: Personal
 author_profile: true
