@@ -1,13 +1,13 @@
 ---
-layout: single
 title: About
+layout: about
 permalink: /blog/about/
 author_profile: true
 ---
 
 ## Hey there!
 
-I'm Asbah Talal, a freshman at Texas A&M. Feel free to reach out!
+I'm Asbah Talal, an engineering student at Texas A&M University. Feel free to reach out!
 
 I'm interested in 
 - solving fun problems (such as, "How similar are the jokes that my teachers make?" and "How many chicken nuggets can you buy with X dollars?")
