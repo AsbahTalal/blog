@@ -5,7 +5,7 @@ date: 2025-12-03 18:26:50 +0000
 categories: Personal
 author_profile: true
 header:
-  image: /assets/images/beach.jpg
+  image: /assets/images/me-beach.jpg
   teaser: /assets/images/beach.jpg
 toc: true
 toc_sticky: true
@@ -15,13 +15,13 @@ toc_sticky: true
 
 ## Second Post
 
-If you can't tell from the date of my last post, I haven't touched this website in so long. So much has happened since my last post. By so much, I mean I am a completely different person now. I had no idea what life had in store for me, the good and the bad. How fast time goes by. I was 15 when I made this website and now I am 18 and in college.
+If you can't tell from the date of my last post, I haven't updated this website in so long. So much has happened since my last post. How fast time really goes by. I was 15 when I made this website and now I am 18 and in college.
 
 ## Quick Recap
-How funny it is to me reading about how afraid I was for junior year. I definitely had every right to be. Junior and senior years of high school had its own ups and downs. It was the years I had the most character development. I went out of my comfort zone, learned a lot, gained knowledge and overall grew into a better person. 
+How funny it is to me reading about how afraid I was for junior year. I definitely had every right to be. Junior and senior years of high school had its own ups and downs. It was the years I had the most character development. Traveling overseas. Learning new skills. Getting my first internship. Being part of more orgs. Getting my braces removed. High school graduation. College starting. And so much more. None to say, I went out of my comfort zone, learned a lot, and overall grew into a better person. 
 
 ## On the Origin of Ideas
-Held beliefs can originate either **externally or internally**, personal experiences may form stronger biases, but ideas given by trusted (subconscious or conscious) sources, likely form a *larger subset of values*. 
+I tend to think that held beliefs can originate either **externally or internally**, personal experiences may form stronger biases, but ideas given by trusted (subconscious or conscious) sources, likely form a *larger subset of values*. 
 
 When making decisions and engaging with new or old ideas, it's important to understand which beliefs *originate from within* and which were *bought from others*. By the way, individual decisions are limited by **current conceptions of the present**, so learning is good. 
 
