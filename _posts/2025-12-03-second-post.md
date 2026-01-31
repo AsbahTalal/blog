@@ -15,10 +15,14 @@ toc_sticky: true
 
 ## Second Post
 
-If you can't tell from the date of my last post, I haven't updated this website in so long. So much has happened since my last post. How fast time really goes by. I was 15 when I made this website and now I am 18 and in college.
+If the date of my last post didn’t already give it away, I’ve been away from this website for a long time. A lot has happened since then. And by “a lot,” I mean I’m genuinely not the same person anymore. I had no idea what life had lined up for me, both the good and the bad. Time moves faster than you expect. I was 15 when I first made this site, and now I’m 18 and in college.
 
 ## Quick Recap
-How funny it is to me reading about how afraid I was for junior year. I definitely had every right to be. Junior and senior years of high school had its own ups and downs. It was the years I had the most character development. Traveling overseas. Learning new skills. Getting my first internship. Being part of more orgs. Getting my braces removed. High school graduation. College starting. And so much more. None to say, I went out of my comfort zone, learned a lot, and overall grew into a better person. 
+It’s funny looking back at how scared I was of junior year. In hindsight, I had every reason to be. Junior and senior year came with its own ups and downs, but it was also when most of my character development happened.
+
+Traveling overseas. Learning new skills. Getting my first job. Getting a driver license. Joining different orgs. Getting my braces off. Making new friends. Graduating high school. Starting college. The list keeps going.
+
+More than anything, those years pushed me out of my comfort zone. No doubt have I learned a lot, gained different perspectives, and grew for the better. 
 
 ## On the Origin of Ideas
 I tend to think that held beliefs can originate either **externally or internally**, personal experiences may form stronger biases, but ideas given by trusted (subconscious or conscious) sources, likely form a *larger subset of values*. 
@@ -53,3 +57,35 @@ Accepting external ideas without proper reasoning is a common source of inconsis
 For example, money and fame is highly valued by most people, but does that align with the rest of their beliefs or were those ideas sold to them by society? Many people also value privacy, and it is impossible to have both fame and privacy, so there is some moderate fraction of people who say they want to become famous who actually might not enjoy it. For those who value money, there is also some fraction that values leisure more highly, but it is very difficult to get rich without working extremely hard and giving up free time. 
 
 Ultimately, *independent thinkers* use their **ideas to serve themselves** rather than become **slaves to dogma**. The next time you make an important decision, consider your true motivations and act accordingly; don't blindly follow anything or anyone without reason. 
+
+## Stoicism
+It’s much easier to be a stoic with a good understanding of statistics because you realize just how indifferent randomness is to who you are.
+
+Bad things happen to you not because there’s a higher power that has a personal vendetta against you, but simply because you happen to be on the other side of luck.
+
+## Epic Fails
+It’s important to fail and be laughed at because you realize that the people laughing do not actually care about you personally. If it were any other combination of audience vs failer, the audience would always laugh.
+
+I used to absolutely suck at ping pong and everyone was laughing, but it wasn’t anything personal.
+
+## Floating Possibilities
+In quantum mechanics, an electron can be in an infinite number of positions until observed. In League, you can still win unless your base has blown up. Life imitates art, so obviously even if you are down a lot you can still make a comeback.
+
+Pessimists and optimists both skew their guess at the future in their direction, but I believe that optimism makes more sense.
+
+When an event that is out of our control (which can be good or bad after the collapse of the event) is still in a floating state of uncertainty, an optimist will assume implicitly that it will end well, and will not stress about the outcome, but wil be unprepared when it goes wrong. However, a pessimist will prepare for the worst case and be stressed until it happens, and will have wasted time stressing if the worst case doesn’t happen.
+
+What’s more important is what happens between events though. The optimist will have to do a lot of work to fix the situation, but the pessimist will not look forward to the next day with hope.
+
+Also, trying to prevent bad things from happening will not always work, since more can just pop up even when the right choice is made. So, it’s more important to make things right after just making a decision
+
+## Old feelings
+There are some things you can only feel when you’re at home. Some combination of synapses, negative celsius weather, and the low hums of the heart reignite a sort of passion.
+
+Why do people live in the cold? It’s because it’s what they know, and that’s a good enough reason. In the escape from the known, you realize that gut feelings are the guide for reasons.
+
+Most people don’t move around their entire lives and experience different things.
+
+There’s a simplistic beauty in sticking to what you know. Adapting to new situations isn’t always the most important. Sometimes, you just need to do what you know best.
+
+
