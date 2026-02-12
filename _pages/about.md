@@ -7,13 +7,13 @@ author_profile: true
 
 ## Hey there!
 
-I'm Asbah Talal, an engineering student at Texas A&M University. Feel free to reach out!
+I'm Asbah Talal, an engineering student at Texas A&M. Feel free to reach out!
 
 I'm interested in 
-- solving fun problems (such as, "How similar are the jokes that my teachers make?" and "How many chicken nuggets can you buy with X dollars?")
-- playing guitar and singing
-- music (my top 5 fav artists: 李荣浩, Yorushika, Hozier, and Feed Me Jack)
-- drawing (I love Hirohiko Araki)
-- anime; *JoJo's Bizarre Adventure: Diamond is Unbreakable*, *Link Click, Jujutsu Kaisen, Detective Conan*, and *Nichijou*
-- manga/manhwa/comics; *Steel Ball Run*, *Team Fortress 2 Comic*, *Greatest Estate Developer*, *Sakamoto Days*
-- teaching; something I want to do in the future
+- fencing (épée & foil)
+- solving fun problems 
+- robotics, coding, and circuits
+- poetry, drawing, art, and writing
+- music 
+- learning Arabic (I'm trying to be fluent)
+- teaching, or at least explaining things well enough that someone else can build on them

@@ -25,6 +25,8 @@ Traveling overseas. Learning new skills. Getting my first job. Getting a driver 
 More than anything, those years pushed me out of my comfort zone. No doubt have I learned a lot, gained different perspectives, and grew for the better. 
 
 ## On the Origin of Ideas
+Firstly, let me just say that everyone should write down ideas on paper whenever they appear in order to not forget them. I have forgotten ideas so many times because I did not bother to write them down, but then became really irked by the fact that I can’t actually remember it. Also, remember to sleep early because memory is heavily affected by sleep. So many of my friends say they have a bad memory but also sleep at 2 AM every day.
+
 I tend to think that held beliefs can originate either **externally or internally**, personal experiences may form stronger biases, but ideas given by trusted (subconscious or conscious) sources, likely form a *larger subset of values*. 
 
 When making decisions and engaging with new or old ideas, it's important to understand which beliefs *originate from within* and which were *bought from others*. By the way, individual decisions are limited by **current conceptions of the present**, so learning is good. 

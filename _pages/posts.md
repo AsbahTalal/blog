@@ -1,7 +1,7 @@
 ---
 title: Posts
 layout: posts
-permalink: /posts/
+permalink: /blog/posts/
 author_profile: true
 ---
 
