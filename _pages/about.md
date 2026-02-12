@@ -1,7 +1,7 @@
 ---
 title: About
 layout: about
-permalink: /blog/about/
+permalink: /about/
 author_profile: true
 ---
 
