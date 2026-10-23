@@ -41,8 +41,8 @@ analytics:
 author:
   name             : "Asbah Talal"
   avatar           : "/assets/images/IMG_3770.jpeg"
-  bio              : "Texas A&M University"
-  location         : "College Station, TX, USA"
+  bio              : "Mechanical & Aerospace Engineering, Oklahoma State University"
+  location         : "Stillwater, OK, USA"
   email            : "asbah.talal@gmail.com"
   links:
     - label: "GitHub"
@@ -196,6 +196,13 @@ defaults:
       toc_sticky: true
       toc_label: "Table of Contents"
       toc_icon: "cog"
+      published: false   # hidden from the site; files kept in _posts/
+
+  # old pages in _pages/ (about, posts, projects): hidden, files kept
+  - scope:
+      path: "_pages"
+    values:
+      published: false
 
   # pages (about, posts page, projects page, etc.)
   - scope:

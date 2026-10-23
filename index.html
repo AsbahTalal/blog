@@ -1,10 +1,325 @@
 ---
-layout: home
-title: Home
-author_profile: true
-entries_layout: grid
-classes: wide
+layout: null
+title: Asbah Talal
+permalink: /
 ---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asbah Talal | Mechanical &amp; Aerospace Engineering</title>
+<meta name="description" content="Asbah Talal, mechanical and aerospace engineering student at Oklahoma State University. Drones, star trackers, underwater robots, and flight payloads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#0B0D12;--card:#12151C;--well:#161922;--ph:#1A1D26;--line:#23262F;--line2:#2E323C;--text:#E8E4DA;--body:#C9C5BB;--muted:#A9AEBA;--dim:#8A90A0;--gold:#F2B544}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--text)}a:hover{color:var(--gold)}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.mono{font-family:'JetBrains Mono',monospace}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--dim)}
+em.gold{color:var(--gold)}
 
+/* nav */
+header.nav{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:28px;padding-bottom:28px}
+.brand{font-family:'Instrument Serif',serif;font-size:26px;text-decoration:none}
+header.nav nav{display:flex;flex-wrap:wrap;gap:28px;font-size:15px}
+header.nav nav a{text-decoration:none;color:var(--muted)}
+header.nav nav a:hover{color:var(--gold)}
 
-{% include logo-intro.html %}
+/* hero */
+.hero{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:40px;padding-bottom:96px}
+.hero-text{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:28px}
+.loc{display:flex;gap:10px;align-items:center;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hero h1{margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(52px,8vw,84px);line-height:1;letter-spacing:-.01em}
+.hero p{margin:0;max-width:560px;font-size:18px;line-height:1.65;color:var(--body)}
+.btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border:1px solid var(--gold);border-radius:999px;text-decoration:none;font-size:15px}
+.hero-art{flex:1 1 420px;min-width:0;display:flex;justify-content:center}
+.stage{position:relative;width:460px;max-width:100%;height:560px}
+.ring,.orbit{position:absolute;left:50%;top:46%;width:400px;height:400px;margin:-200px 0 0 -200px;border-radius:50%}
+.ring{border:1px dashed var(--line2)}
+.orbit::after{content:"";position:absolute;top:-5px;left:50%;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px var(--gold)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.star{position:absolute}
+.speck{position:absolute;border-radius:50%;background:var(--text)}
+
+/* work */
+.section{padding-bottom:96px}
+.sec-head{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
+.sec-head h2{margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(38px,5vw,52px);line-height:1.05}
+.sec-head p{margin:0;max-width:620px;font-size:16px;line-height:1.6;color:var(--muted)}
+.projects{display:flex;flex-direction:column;gap:28px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-wrap:wrap;transition:border-color .25s ease}
+.pcard:hover{border-color:#5A6070}
+.pimg{flex:1 1 360px;min-height:280px;background:var(--ph);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim)}
+.pimg img{width:100%;height:100%;object-fit:cover;display:block}
+.pbody{flex:1.4 1 420px;min-width:0;padding:28px;display:flex;flex-direction:column;gap:14px}
+.ptop{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.ptag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--gold)}
+.pstatus{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--body);border:1px solid var(--line2);border-radius:6px;padding:4px 8px}
+.pbody h3{margin:0;font-size:22px;font-weight:600;line-height:1.25}
+.pbody p{margin:0;font-size:14px;line-height:1.65;color:var(--muted)}
+.chips,.tools{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--ph);border:1px solid var(--line2);border-radius:6px;padding:6px 9px}
+.pfoot{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+.tool{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+.btn-solid{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;background:var(--text);color:var(--bg);text-decoration:none;font-size:14px;font-weight:500}
+.btn-solid:hover{background:var(--gold);color:var(--bg)}
+
+/* about */
+.about{display:flex;flex-direction:column;gap:40px;align-items:center}
+.about-title{margin:0;padding:18px 32px;background:var(--well);border:1px solid var(--line);border-radius:12px;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4vw,40px);text-align:center}
+.about-row{width:100%;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
+.about-row img{flex:1 1 420px;min-width:0;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:42% center;border-radius:16px;display:block}
+.about-text{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:18px;font-size:17px;line-height:1.7;color:var(--body)}
+.about-text p{margin:0}
+
+/* carousel */
+.car-head{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:20px}
+.car-head h2{margin:8px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:40px}
+.arrows{display:flex;gap:10px}
+.arrow{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:transparent;color:var(--text);font-size:18px;cursor:pointer}
+.arrow:hover{border-color:var(--gold);color:var(--gold)}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:14px}
+.track::-webkit-scrollbar{display:none}
+.track figure{flex:0 0 300px;margin:0;scroll-snap-align:start;display:flex;flex-direction:column;gap:8px}
+.frame{height:380px;border-radius:12px;background:var(--well);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:cover}
+.track figcaption{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim)}
+.track figcaption span{color:var(--gold)}
+
+/* reads */
+.shelf{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;border-bottom:2px solid var(--text);padding-bottom:2px;margin:20px 0 8px}
+.book{width:112px;height:164px;border-radius:4px;padding:12px 10px;display:flex;flex-direction:column;justify-content:space-between}
+.book b{font-family:'Instrument Serif',serif;font-weight:400;font-size:19px;line-height:1.05}
+.book i{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.06em}
+
+/* contact + footer */
+.contact{border-top:1px solid var(--line);padding-top:56px;padding-bottom:72px;display:flex;flex-direction:column;gap:22px;align-items:center;text-align:center}
+.contact h2{margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:48px}
+.icons{display:flex;gap:14px}
+.icon{width:52px;height:52px;border:1px solid var(--line2);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.icon:hover{border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding-top:24px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim)}
+footer b{font-weight:400;color:var(--gold)}
+
+/* motion */
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes twinkle{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(6deg)}}
+.orbit{animation:orbit 30s linear infinite}
+.tw{animation:twinkle 3.6s ease-in-out infinite}
+.drift{animation:drift 7s ease-in-out infinite}
+.drift2{animation:drift 9s ease-in-out infinite reverse}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.orbit,.tw,.drift,.drift2{animation:none}.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (max-width:600px){.stage{height:440px}.ring,.orbit{width:300px;height:300px;margin:-150px 0 0 -150px}}
+</style>
+</head>
+<body>
+
+<header class="wrap nav">
+  <a class="brand" href="#top">asbah talal</a>
+  <nav aria-label="Sections">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="top" class="wrap hero">
+  <div class="hero-text">
+    <div class="loc"><span class="dot tw"></span><span>36.12°N · STILLWATER, OK</span></div>
+    <h1>Howdy, I'm<br><em class="gold">Asbah Talal!</em></h1>
+    <p>I'm a sophomore studying Mechanical and Aerospace Engineering at Oklahoma State. I love building things that fly, dive, and track the stars.</p>
+    <p>I work where hardware meets code: designing parts in CAD, wiring up the electronics, and writing the software that makes it all move.</p>
+    <div><a class="btn-ghost" href="#work">Let's see some of my work →</a></div>
+  </div>
+  <div class="hero-art">
+    <div class="stage">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="orbit" aria-hidden="true"></div>
+      <img src="{{ '/assets/images/asbah-blazer.png' | relative_url }}" alt="Asbah Talal in a navy blazer">
+      <svg class="star drift" aria-hidden="true" viewBox="0 0 100 100" style="left:-6px;top:70px;width:84px;height:84px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#E8E4DA" stroke-width="2.5" stroke-linejoin="round"/></svg>
+      <svg class="star drift2" aria-hidden="true" viewBox="0 0 100 100" style="right:-10px;top:170px;width:60px;height:60px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#F2B544" stroke-width="3" stroke-linejoin="round"/></svg>
+      <svg class="star drift" aria-hidden="true" viewBox="0 0 100 100" style="left:30px;bottom:60px;width:44px;height:44px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#E8E4DA" stroke-width="3.5" stroke-linejoin="round"/></svg>
+      <span class="speck tw" aria-hidden="true" style="right:60px;top:40px;width:3px;height:3px"></span>
+      <span class="speck tw" aria-hidden="true" style="right:20px;bottom:140px;width:2px;height:2px"></span>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="wrap section">
+  <div class="sec-head">
+    <span class="eyebrow">01 / SELECTED WORK</span>
+    <h2>Engineering projects</h2>
+    <p>Drones, star trackers, underwater robots, flight payloads, and the research behind them.</p>
+  </div>
+
+  <div class="projects">
+    <article class="pcard reveal">
+      <div class="pimg">[DRON chassis render]</div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">01 / AEROSPACE · AUTONOMY</span><span class="pstatus">● SIMULATION TESTED</span></div>
+        <h3>DRON: Disaster Response Observation Network</h3>
+        <p>Team UAV swarm to give first responders eyes on structural fires. Modular PA6 glass-fiber chassis with heat-set inserts, thermal + stereo cameras on a Raspberry Pi, and multi-drone PX4 autonomy demonstrated in Gazebo.</p>
+        <div class="chips"><span class="chip">~500 g payload</span><span class="chip">12–15 min est. flight</span><span class="chip">2× stereo + thermal</span><span class="chip">multi-agent SITL</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">SolidWorks</span><span class="tool">PX4</span><span class="tool">ROS2</span><span class="tool">OpenCV</span><span class="tool">Unity</span></div>
+          <a class="btn-solid" href="{{ '/assets/images/DRON-poster.png' | relative_url }}">View project →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="pimg">[ORIO cycloidal drive render]</div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">02 / MECHANICAL · ELECTRONICS</span><span class="pstatus">● PROTOTYPING</span></div>
+        <h3>ORIO: 3D-Printed Equatorial Star Tracker</h3>
+        <p>Equatorial mount that tracks the sky at the sidereal rate for astrophotography. Cycloidal + belt drives, print-in-place hinged base for polar alignment, ESP32 web control. With the TAMU Munnerlyn Astronomical Instrumentation Lab.</p>
+        <div class="chips"><span class="chip">NEMA 17 · 29 N·cm</span><span class="chip">2-axis drive</span><span class="chip">14.8 V LiPo</span><span class="chip">sidereal tracking</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">SolidWorks</span><span class="tool">ESP32</span><span class="tool">TMC2209</span><span class="tool">3D Printing</span></div>
+          <a class="btn-solid" href="#">View project →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="pimg">[AUV photo]</div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">03 / MARINE ROBOTICS</span><span class="pstatus">● [STATUS]</span></div>
+        <h3>Autonomous Underwater Vehicle Team</h3>
+        <p>[What you built or designed on the AUV team, and what it does]</p>
+        <div class="chips"><span class="chip">[metric]</span><span class="chip">[metric]</span><span class="chip">[metric]</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">[tool]</span><span class="tool">[tool]</span><span class="tool">MATLAB</span></div>
+          <a class="btn-solid" href="#">View project →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="pimg">[AGU poster or air-quality map]</div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">04 / RESEARCH · ATMOSPHERIC DATA</span><span class="pstatus">● PRESENTED</span></div>
+        <h3>NASA SEES: Nationwide Air Quality Modeling</h3>
+        <p>Research internship with the UT Austin Center for Space Research. Built Python statistical models of PM2.5 and ozone trends from PurpleAir sensors and NASA data across urban and rural regions.</p>
+        <div class="chips"><span class="chip">PM2.5 + ozone</span><span class="chip">urban vs rural</span><span class="chip">AGU 2024</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">Python</span><span class="tool">Pandas</span><span class="tool">NumPy</span><span class="tool">Statistics</span></div>
+          <a class="btn-solid" href="#">View project →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="pimg"><img src="{{ '/assets/images/IMG_3772.jpg' | relative_url }}" alt="Cubes in Space payload" loading="lazy"></div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">05 / FLIGHT HARDWARE</span><span class="pstatus">● FLOWN</span></div>
+        <h3>NASA Cubes in Space: RF Payload</h3>
+        <p>Designed an RF transceiver payload flown on a NASA scientific balloon, then analyzed post-flight data on radio-wave behavior at high altitude.</p>
+        <div class="chips"><span class="chip">balloon-flown</span><span class="chip">RF transceiver</span><span class="chip">post-flight analysis</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">RF Electronics</span><span class="tool">CAD</span><span class="tool">Data Analysis</span></div>
+          <a class="btn-solid" href="https://www.news9.com/story/64792306ef8f937d63ce0beb/oklahoma-teens-prepare-to-send-their-experiment-into-space">View project →</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="wrap section about">
+  <h2 class="about-title">That's some of my work, but <em class="gold">who am I?</em></h2>
+  <div class="about-row">
+    <img src="{{ '/assets/images/asbah-garden.jpg' | relative_url }}" alt="Asbah standing among greenery in a botanical garden" loading="lazy">
+    <div class="about-text">
+      <p>[A line about where you're from and your background]</p>
+      <p>[How you got into engineering: the moment or project that hooked you]</p>
+      <p>Off the clock I fence (épée &amp; foil), train in taekwondo, and take a lot of photos. I speak English, Hindi, and Arabic.</p>
+      <p>[What you're looking for: internships, research, people to build with]</p>
+      <p style="color:var(--text)">If you'd like to connect or chat, feel free to reach out!</p>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOGRAPHY -->
+<section class="wrap section" aria-label="Photography">
+  <div class="car-head">
+    <div><span class="eyebrow">THROUGH MY LENS</span><h2>Photography</h2></div>
+    <div class="arrows">
+      <button class="arrow" type="button" id="prev" aria-label="Previous photos">←</button>
+      <button class="arrow" type="button" id="next" aria-label="Next photos">→</button>
+    </div>
+  </div>
+  <div class="track" id="track">
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 01</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 02</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 03</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 04</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 05</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 06</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 07</span> · [place]</figcaption></figure>
+    <figure><div class="frame">[photo]</div><figcaption><span>FR 08</span> · [place]</figcaption></figure>
+  </div>
+</section>
+
+<!-- CURRENT READS -->
+<section class="wrap section" aria-label="Current reads">
+  <span class="eyebrow">CURRENT READS</span>
+  <div class="shelf">
+    <div class="book" style="background:#3B2A4F;color:#F1E9FF"><b>Mistborn</b><i>B. SANDERSON</i></div>
+    <div class="book" style="background:#E8E4DA;color:#1B1E26"><b>Flowers for Algernon</b><i>D. KEYES</i></div>
+    <div class="book" style="background:#1F3A4A;color:#F2E6C9"><b>Piranesi</b><i>S. CLARKE</i></div>
+    <div class="book" style="background:#C7372F;color:#FFF3E6"><b>Slaughter-house-Five</b><i>K. VONNEGUT</i></div>
+    <div class="book" style="background:#A9B7C6;color:#14202C"><b>Pachinko</b><i>M. J. LEE</i></div>
+  </div>
+  <span style="font-size:13px;color:var(--dim)">5 books</span>
+</section>
+</main>
+
+<!-- CONTACT -->
+<section id="contact" class="wrap contact">
+  <h2>Let's connect!</h2>
+  <div class="icons">
+    <a class="icon" href="https://www.linkedin.com/in/asbah-talal/" aria-label="LinkedIn"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+    <a class="icon" href="https://github.com/AsbahTalal" aria-label="GitHub"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+    <a class="icon" href="mailto:asbah.talal@gmail.com" aria-label="Email"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+  </div>
+  <a class="mono" href="mailto:asbah.talal@gmail.com" style="font-size:15px">asbah.talal@gmail.com</a>
+</section>
+
+<footer class="wrap">
+  <span>built by asbah · stillwater, ok</span>
+  <span>SIDEREAL DAY <b>23h 56m 4s</b></span>
+</footer>
+
+<script>
+(function () {
+  var track = document.getElementById('track');
+  var step = function () { var f = track.querySelector('figure'); return f ? f.getBoundingClientRect().width + 16 : 316; };
+  document.getElementById('prev').addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  document.getElementById('next').addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
