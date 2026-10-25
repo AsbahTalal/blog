@@ -126,8 +126,6 @@ dialog.pm[open]{animation:pop .28s ease-out}
 .photo-grid .ph{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--well)}
 .photo-grid img{width:100%;height:auto;display:block;transition:transform .5s ease}
 .photo-grid figure:hover img{transform:scale(1.03)}
-.photo-grid figcaption{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.photo-grid figcaption span{color:var(--gold)}
 @media (max-width:600px){.photo-grid{gap:20px}.photo-grid figure{flex:1 1 100%}}
 
 /* reads */
@@ -184,7 +182,7 @@ footer b{font-weight:400;color:var(--gold)}
     <div class="stage">
       <div class="ring" aria-hidden="true"></div>
       <div class="orbit" aria-hidden="true"></div>
-      <img src="{{ '/assets/images/asbah-blazer.png' | relative_url }}" alt="Asbah Talal in a navy blazer">
+      <img src="{{ '/assets/images/asbah-blazer-crop.png' | relative_url }}" alt="Asbah Talal in a navy blazer">
       <svg class="star drift" aria-hidden="true" viewBox="0 0 100 100" style="left:-6px;top:70px;width:84px;height:84px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#E8E4DA" stroke-width="2.5" stroke-linejoin="round"/></svg>
       <svg class="star drift2" aria-hidden="true" viewBox="0 0 100 100" style="right:-10px;top:170px;width:60px;height:60px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#F2B544" stroke-width="3" stroke-linejoin="round"/></svg>
       <svg class="star drift" aria-hidden="true" viewBox="0 0 100 100" style="left:30px;bottom:60px;width:44px;height:44px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#E8E4DA" stroke-width="3.5" stroke-linejoin="round"/></svg>
@@ -317,13 +315,13 @@ footer b{font-weight:400;color:var(--gold)}
 <section class="wrap section" aria-label="Photography">
   <div class="car-head"><span class="eyebrow">THROUGH MY LENS</span><h2>Photography</h2></div>
   <div class="photo-grid">
-    <figure style="--ar:0.74"><div class="ph"><img src="{{ '/assets/images/photos/kebab-stall.jpg' | relative_url }}" alt="A boy in a red jacket fanning coals at a kebab stall at night" loading="lazy"></div><figcaption><span>FR 01</span> · Seekh kebabs over the coals</figcaption></figure>
-    <figure style="--ar:1.608"><div class="ph"><img src="{{ '/assets/images/photos/karachi-bus.jpg' | relative_url }}" alt="A decorated bus on route 4Q in front of a mosque in Karachi" loading="lazy"></div><figcaption><span>FR 02</span> · Karachi</figcaption></figure>
-    <figure style="--ar:0.733"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-door.jpg' | relative_url }}" alt="Shoppers entering the blue doorway of Empress Market" loading="lazy"></div><figcaption><span>FR 03</span> · Empress Market, Karachi</figcaption></figure>
-    <figure style="--ar:1.626"><div class="ph"><img src="{{ '/assets/images/photos/window-to-the-lake.jpg' | relative_url }}" alt="A beach, pier and sailboat framed by three windows" loading="lazy"></div><figcaption><span>FR 04</span> · Through the window</figcaption></figure>
-    <figure style="--ar:0.685"><div class="ph"><img src="{{ '/assets/images/photos/brooklyn-bridge.jpg' | relative_url }}" alt="A sailboat passing under the Brooklyn Bridge" loading="lazy"></div><figcaption><span>FR 05</span> · Brooklyn Bridge, NYC</figcaption></figure>
-    <figure style="--ar:1.5"><div class="ph"><img src="{{ '/assets/images/photos/water-lily.jpg' | relative_url }}" alt="A pale pink water lily among lily pads on dark water" loading="lazy"></div><figcaption><span>FR 06</span> · Water lily</figcaption></figure>
-    <figure style="--ar:0.586"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-tower.jpg' | relative_url }}" alt="The sandstone clock tower of Empress Market" loading="lazy"></div><figcaption><span>FR 07</span> · Clock tower, Karachi</figcaption></figure>
+    <figure style="--ar:0.74"><div class="ph"><img src="{{ '/assets/images/photos/kebab-stall.jpg' | relative_url }}" alt="A boy in a red jacket fanning coals at a kebab stall at night" loading="lazy"></div></figure>
+    <figure style="--ar:1.5"><div class="ph"><img src="{{ '/assets/images/photos/karachi-bus.jpg' | relative_url }}" alt="A decorated bus on route 4Q in front of a mosque in Karachi" loading="lazy"></div></figure>
+    <figure style="--ar:0.733"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-door.jpg' | relative_url }}" alt="Shoppers entering the blue doorway of Empress Market" loading="lazy"></div></figure>
+    <figure style="--ar:1.626"><div class="ph"><img src="{{ '/assets/images/photos/window-to-the-lake.jpg' | relative_url }}" alt="A beach, pier and sailboat framed by three windows" loading="lazy"></div></figure>
+    <figure style="--ar:0.685"><div class="ph"><img src="{{ '/assets/images/photos/brooklyn-bridge.jpg' | relative_url }}" alt="A sailboat passing under the Brooklyn Bridge" loading="lazy"></div></figure>
+    <figure style="--ar:1.5"><div class="ph"><img src="{{ '/assets/images/photos/water-lily.jpg' | relative_url }}" alt="A pale pink water lily among lily pads on dark water" loading="lazy"></div></figure>
+    <figure style="--ar:0.586"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-tower.jpg' | relative_url }}" alt="The sandstone clock tower of Empress Market" loading="lazy"></div></figure>
   </div>
 </section>
 
