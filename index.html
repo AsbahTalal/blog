@@ -126,9 +126,10 @@ dialog.pm[open]{animation:pop .28s ease-out}
 .arrow:hover{border-color:var(--gold);color:var(--gold)}
 .track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:14px}
 .track::-webkit-scrollbar{display:none}
-.track figure{flex:0 0 300px;margin:0;scroll-snap-align:start;display:flex;flex-direction:column;gap:8px}
-.frame{height:380px;border-radius:12px;background:var(--well);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);overflow:hidden}
-.frame img{width:100%;height:100%;object-fit:cover}
+.track figure{flex:0 0 auto;width:min-content;margin:0;scroll-snap-align:start;display:flex;flex-direction:column;gap:8px}
+.frame{height:420px;border-radius:12px;background:var(--well);border:1px solid var(--line);overflow:hidden}
+.frame img{height:100%;width:auto;display:block}
+@media (max-width:600px){.frame{height:300px}}
 .track figcaption{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim)}
 .track figcaption span{color:var(--gold)}
 
@@ -325,14 +326,13 @@ footer b{font-weight:400;color:var(--gold)}
     </div>
   </div>
   <div class="track" id="track">
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 01</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 02</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 03</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 04</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 05</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 06</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 07</span> · [place]</figcaption></figure>
-    <figure><div class="frame">[photo]</div><figcaption><span>FR 08</span> · [place]</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/kebab-stall.jpg' | relative_url }}" alt="A boy in a red jacket fanning coals at a kebab stall at night" loading="lazy"></div><figcaption><span>FR 01</span> · Seekh kebabs over the coals</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/karachi-bus.jpg' | relative_url }}" alt="A decorated bus on route 4Q in front of a mosque in Karachi" loading="lazy"></div><figcaption><span>FR 02</span> · Karachi</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/empress-market-door.jpg' | relative_url }}" alt="Shoppers entering the blue doorway of Empress Market" loading="lazy"></div><figcaption><span>FR 03</span> · Empress Market, Karachi</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/window-to-the-lake.jpg' | relative_url }}" alt="A beach, pier and sailboat framed by three windows" loading="lazy"></div><figcaption><span>FR 04</span> · Through the window</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/brooklyn-bridge.jpg' | relative_url }}" alt="A sailboat passing under the Brooklyn Bridge" loading="lazy"></div><figcaption><span>FR 05</span> · Brooklyn Bridge, New York</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/water-lily.jpg' | relative_url }}" alt="A pale pink water lily among lily pads on dark water" loading="lazy"></div><figcaption><span>FR 06</span> · Water lily</figcaption></figure>
+    <figure><div class="frame"><img src="{{ '/assets/images/photos/empress-market-tower.jpg' | relative_url }}" alt="The sandstone clock tower of Empress Market" loading="lazy"></div><figcaption><span>FR 07</span> · Empress Market clock tower, Karachi</figcaption></figure>
   </div>
 </section>
 
@@ -694,7 +694,7 @@ footer b{font-weight:400;color:var(--gold)}
 <script>
 (function () {
   var track = document.getElementById('track');
-  var step = function () { var f = track.querySelector('figure'); return f ? f.getBoundingClientRect().width + 16 : 316; };
+  var step = function () { return Math.max(260, track.clientWidth * 0.6); };
   document.getElementById('prev').addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
   document.getElementById('next').addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
 
