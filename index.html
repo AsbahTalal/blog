@@ -199,7 +199,7 @@ footer b{font-weight:400;color:var(--gold)}
       <div class="pbody">
         <div class="ptop"><span class="ptag">01 / AEROSPACE · MECHANICAL</span><span class="pstatus">● FLIGHT TESTED</span></div>
         <h3>DRON: Disaster Response Observation Network</h3>
-        <p>Quadcopter swarm built to give firefighters eyes on structural fires. On the mechanical team: 3D-printed chassis, carbon fiber tube arms and legs, a modular battery holder, and FEA drop tests. Flight-tested on hardware in March 2026.</p>
+        <p>Quadcopter swarm built to give firefighters eyes on structural fires. I designed the 3D-printed chassis, carbon fiber tube arms and legs, and modular battery holder, and ran the FEA drop tests. Flight-tested on hardware in March 2026.</p>
         <div class="chips"><span class="chip">flown Mar 2026</span><span class="chip">16 mm CF tube arms</span><span class="chip">FEA drop tests</span><span class="chip">~$430 / drone</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">SolidWorks</span><span class="tool">FEA</span><span class="tool">3D Printing</span><span class="tool">PX4</span><span class="tool">ROS2</span></div>
@@ -213,7 +213,7 @@ footer b{font-weight:400;color:var(--gold)}
       <div class="pbody">
         <div class="ptop"><span class="ptag">02 / MECHANICAL · ELECTRONICS</span><span class="pstatus">● PROTOTYPING</span></div>
         <h3>ORIO: 3D-Printed Equatorial Star Tracker</h3>
-        <p>Camera mount that turns with the sky at the sidereal rate so stars stay sharp in long exposures. A 20:1 cycloidal drive plus belt stage for low backlash, a print-in-place hinged base for polar alignment, and ESP32 web control.</p>
+        <p>I designed a camera mount that turns with the sky at the sidereal rate so stars stay sharp in long exposures: a 20:1 cycloidal drive plus belt stage for low backlash, a print-in-place hinged base for polar alignment, and ESP32 web control.</p>
         <div class="chips"><span class="chip">20:1 cycloidal stage</span><span class="chip">2 kg payload target</span><span class="chip">NEMA 17 · 29 N·cm</span><span class="chip">sidereal tracking</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">SolidWorks</span><span class="tool">ESP32</span><span class="tool">TMC2209</span><span class="tool">3D Printing</span></div>
@@ -334,7 +334,7 @@ footer b{font-weight:400;color:var(--gold)}
     <div class="pm-head">
       <span class="ptag">01 / AEROSPACE · MECHANICAL · TEAM PROJECT</span>
       <h2 id="pm-dron-title">DRON: Disaster Response Observation Network</h2>
-      <div class="chips"><span class="chip">● flight tested</span><span class="chip">mechanical subteam</span><span class="chip">fall 2025 – spring 2026</span></div>
+      <div class="chips"><span class="chip">● flight tested</span><span class="chip">airframe design</span><span class="chip">fall 2025 – spring 2026</span></div>
     </div>
 
     <div class="gallery">
@@ -353,24 +353,24 @@ footer b{font-weight:400;color:var(--gold)}
       </div>
     </div>
 
-    <div class="pm-body"><p>Firefighters at a structural fire need to know where the hotspots are before they go in. DRON is a swarm of small quadcopters that fly around a burning building, map it in 3D with two cameras, and paint thermal data onto the map for first responders. I worked on the mechanical subteam, designing and iterating on the airframe.</p></div>
+    <div class="pm-body"><p>Firefighters at a structural fire need to know where the hotspots are before they go in. DRON is a swarm of small quadcopters that fly around a burning building, map it in 3D with two cameras, and paint thermal data onto the map for first responders. On our team I designed the airframe: the trade studies, CAD, drop-test simulations and the fixes after every broken part.</p></div>
 
     <div class="pm-grid">
       <div class="pm-box">
         <h3>THE PROBLEM</h3>
-        <p>The chassis had to carry a Raspberry Pi 5, flight controller, GPS, two cameras and a thermal camera, survive a 10 m fall, and keep a 1.5 factor of safety, while staying light enough for 10 minutes of flight.</p>
+        <p>My chassis had to carry a Raspberry Pi 5, flight controller, GPS, two cameras and a thermal camera, survive a 10 m fall, and keep a 1.5 factor of safety, while staying light enough for 10 minutes of flight.</p>
       </div>
       <div class="pm-box">
         <h3>WHAT BROKE</h3>
-        <p>During motor testing, PLA and polycarbonate arms snapped. One motor was underperforming, so another spun up to compensate and overloaded its arm. We moved to glass-fiber PLA, then to carbon fiber tubes.</p>
+        <p>During motor testing, PLA and polycarbonate arms snapped. One motor was underperforming, so another spun up to compensate and overloaded its arm. I moved the arms to glass-fiber PLA, then to carbon fiber tubes.</p>
       </div>
       <div class="pm-box">
         <h3>DESIGN DECISIONS</h3>
         <ul>
-          <li>Weighted trade studies for arm material, leg material and chassis shape; carbon fiber won both material studies.</li>
-          <li>Arms and legs from 16 mm OD, 2 mm wall carbon fiber tubes with matching M3 hole patterns, so parts swap.</li>
-          <li>Hybrid-X chassis with 84 mm of clear interior for components and wiring.</li>
-          <li>Custom 4S 18650 pack for under $25, vs $65+ for an off-the-shelf battery.</li>
+          <li>I ran weighted trade studies for arm material, leg material and chassis shape; carbon fiber won both material studies.</li>
+          <li>I designed the arms and legs around 16 mm OD, 2 mm wall carbon fiber tubes with matching M3 hole patterns, so parts swap.</li>
+          <li>I modeled a Hybrid-X chassis with 84 mm of clear interior for components and wiring.</li>
+          <li>I built a custom 4S 18650 pack for under $25, vs $65+ for an off-the-shelf battery.</li>
         </ul>
       </div>
       <div class="pm-box">
@@ -378,7 +378,7 @@ footer b{font-weight:400;color:var(--gold)}
         <ul>
           <li>Sustained flight on hardware in March 2026, holding steady in wind.</li>
           <li>The leg failed at its intended failure point on a hard landing, protecting the electronics.</li>
-          <li>FEA drop tests on the legs guided the foot and joint design.</li>
+          <li>My FEA drop tests on the legs guided the foot and joint design.</li>
           <li>~$430 per drone in parts.</li>
         </ul>
       </div>
@@ -406,7 +406,7 @@ footer b{font-weight:400;color:var(--gold)}
         <button type="button" data-src="{{ '/assets/images/orio/cycloidal-housing.jpg' | relative_url }}" data-cap="Cycloidal housing with the ring of pins and output holes"><img src="{{ '/assets/images/orio/cycloidal-housing.jpg' | relative_url }}" alt="Cycloidal housing CAD"></button>
         <button type="button" data-src="{{ '/assets/images/orio/hinged-base.jpg' | relative_url }}" data-cap="Print-in-place hinged base: one plate on the tripod, one carrying the camera and gearbox, opened to set the polar angle"><img src="{{ '/assets/images/orio/hinged-base.jpg' | relative_url }}" alt="Hinged base CAD"></button>
         <button type="button" data-src="{{ '/assets/images/orio/planetary-gearbox.jpg' | relative_url }}" data-cap="First approach: a 3D-printed planetary gearbox, later replaced by the cycloidal drive"><img src="{{ '/assets/images/orio/planetary-gearbox.jpg' | relative_url }}" alt="Planetary gearbox CAD"></button>
-        <button type="button" data-src="{{ '/assets/images/orio/tripod-adapter.jpg' | relative_url }}" data-cap="Tripod adapter modeled to the 3/8 in thread we measured off the tripod"><img src="{{ '/assets/images/orio/tripod-adapter.jpg' | relative_url }}" alt="Tripod adapter CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/tripod-adapter.jpg' | relative_url }}" data-cap="Tripod adapter modeled to the 3/8 in thread I measured off the tripod"><img src="{{ '/assets/images/orio/tripod-adapter.jpg' | relative_url }}" alt="Tripod adapter CAD"></button>
         <button type="button" data-src="{{ '/assets/images/orio/base-plate.jpg' | relative_url }}" data-cap="Base plate that seats on the tripod head"><img src="{{ '/assets/images/orio/base-plate.jpg' | relative_url }}" alt="Base plate CAD"></button>
         <button type="button" data-src="{{ '/assets/images/orio/tripod-sketch.jpg' | relative_url }}" data-cap="Hand-measured sketch of the tripod head, used to size the base"><img src="{{ '/assets/images/orio/tripod-sketch.jpg' | relative_url }}" alt="Tripod measurement sketch"></button>
         <button type="button" data-src="{{ '/assets/images/orio/concept-sketch.jpg' | relative_url }}" data-cap="Early concept sketch: camera holder, belt system, gearbox and the two rotation axes"><img src="{{ '/assets/images/orio/concept-sketch.jpg' | relative_url }}" alt="Concept sketch"></button>
@@ -415,7 +415,7 @@ footer b{font-weight:400;color:var(--gold)}
       </div>
     </div>
 
-    <div class="pm-body"><p>Stars drift across the sky at the sidereal rate, about 15 arcseconds every second. Leave a camera still for a long exposure and they smear into trails. ORIO is a 3D-printed equatorial mount that sits on a normal tripod and turns the camera with the sky, so stars stay as points.</p></div>
+    <div class="pm-body"><p>Stars drift across the sky at the sidereal rate, about 15 arcseconds every second. Leave a camera still for a long exposure and they smear into trails. ORIO is a 3D-printed equatorial mount that sits on a normal tripod and turns the camera with the sky, so stars stay as points. On our team I designed the drive, the base and the electronics.</p></div>
 
     <div class="pm-grid">
       <div class="pm-box">
@@ -435,18 +435,18 @@ footer b{font-weight:400;color:var(--gold)}
       <div class="pm-box">
         <h3>DESIGN DECISIONS</h3>
         <ul>
-          <li>Started with a 3D-printed planetary gearbox, then moved to a cycloidal drive after review feedback that cycloidals have near-zero backlash.</li>
-          <li>Cycloidal stage: 21 pins, 60 mm pitch radius, 1.5 mm eccentricity, for 20:1 in one stage.</li>
+          <li>I started with a 3D-printed planetary gearbox, then switched to a cycloidal drive after review feedback that cycloidals have near-zero backlash.</li>
+          <li>I designed the cycloidal stage: 21 pins, 60 mm pitch radius, 1.5 mm eccentricity, for 20:1 in one stage.</li>
           <li>Belt stage from a 1" to a 4.5" pulley multiplies the reduction further.</li>
-          <li>Print-in-place hinged base for manual polar alignment.</li>
+          <li>I designed a print-in-place hinged base for manual polar alignment, sized from my own tripod measurements.</li>
         </ul>
       </div>
       <div class="pm-box">
         <h3>ELECTRONICS &amp; CONTROL</h3>
         <ul>
-          <li>ESP32 driving two NEMA 17 steppers through TMC2209 drivers.</li>
+          <li>I wired an ESP32 to drive two NEMA 17 steppers through TMC2209 drivers.</li>
           <li>14.8 V 4S LiPo with a 5 A fuse and buck converter; about 1 hour at 3 A.</li>
-          <li>Web app (HTML, CSS, JavaScript) for manual setup and automatic sidereal tracking.</li>
+          <li>I built the web app (HTML, CSS, JavaScript) for manual setup and automatic sidereal tracking.</li>
           <li>Next: a GoTo mode that points at any object once calibrated.</li>
         </ul>
       </div>
