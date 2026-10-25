@@ -103,7 +103,18 @@ dialog.pm[open]{animation:pop .28s ease-out}
 .about{display:flex;flex-direction:column;gap:40px;align-items:center}
 .about-title{margin:0;padding:18px 32px;background:var(--well);border:1px solid var(--line);border-radius:12px;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4vw,40px);text-align:center}
 .about-row{width:100%;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
-.about-row img{flex:1 1 420px;min-width:0;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:42% center;border-radius:16px;display:block}
+.about-art{flex:1 1 420px;min-width:0;position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:radial-gradient(120% 90% at 50% 100%,#1B2130 0%,#11141B 60%,#0E1016 100%);border:1px solid var(--line)}
+.about-art .sun{position:absolute;left:60%;top:40%;width:66%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 50% 45%,#F7C766 0%,#F2B544 55%,#C98A1F 100%);opacity:.92}
+.about-art .ring{position:absolute;left:60%;top:40%;width:88%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px dashed #3A3F4B}
+.about-art .vf{position:absolute;width:28px;height:28px;border-color:#5A6070;border-style:solid;border-width:0}
+.about-art .vf.tl{top:18px;left:18px;border-top-width:2px;border-left-width:2px}
+.about-art .vf.tr{top:18px;right:18px;border-top-width:2px;border-right-width:2px}
+.about-art .vf.bl{bottom:18px;left:18px;border-bottom-width:2px;border-left-width:2px}
+.about-art .vf.br{bottom:18px;right:18px;border-bottom-width:2px;border-right-width:2px}
+.about-art .tag{position:absolute;top:22px;left:58px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.about-art .rec{position:absolute;top:22px;right:58px;display:flex;gap:6px;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.about-art .rec i{width:7px;height:7px;border-radius:50%;background:#E5484D}
+.about-art img.me{position:absolute;right:0;bottom:0;height:86%;width:auto;max-width:none;display:block;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
 .about-text{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:18px;font-size:17px;line-height:1.7;color:var(--body)}
 .about-text p{margin:0}
 
@@ -284,7 +295,16 @@ footer b{font-weight:400;color:var(--gold)}
 <section id="about" class="wrap section about">
   <h2 class="about-title">That's some of my work, but <em class="gold">who am I?</em></h2>
   <div class="about-row">
-    <img src="{{ '/assets/images/asbah-garden.jpg' | relative_url }}" alt="Asbah standing among greenery in a botanical garden" loading="lazy">
+    <div class="about-art">
+      <span class="ring" aria-hidden="true"></span>
+      <span class="sun" aria-hidden="true"></span>
+      <span class="vf tl" aria-hidden="true"></span><span class="vf tr" aria-hidden="true"></span><span class="vf bl" aria-hidden="true"></span><span class="vf br" aria-hidden="true"></span>
+      <span class="tag" aria-hidden="true">FR 00 · SELF-PORTRAIT</span>
+      <span class="rec" aria-hidden="true"><i class="tw"></i>REC</span>
+      <svg class="star drift" aria-hidden="true" viewBox="0 0 100 100" style="left:8%;top:22%;width:52px;height:52px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#E8E4DA" stroke-width="3" stroke-linejoin="round"/></svg>
+      <svg class="star drift2" aria-hidden="true" viewBox="0 0 100 100" style="left:12%;top:60%;width:34px;height:34px"><polygon points="50,4 61,38 97,38 68,59 79,93 50,72 21,93 32,59 3,38 39,38" fill="none" stroke="#F2B544" stroke-width="4" stroke-linejoin="round"/></svg>
+      <img class="me" src="{{ '/assets/images/asbah-camera.png' | relative_url }}" alt="Asbah holding a camera" loading="lazy">
+    </div>
     <div class="about-text">
       <p>[A line about where you're from and your background]</p>
       <p>[How you got into engineering: the moment or project that hooked you]</p>
