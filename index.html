@@ -209,15 +209,15 @@ footer b{font-weight:400;color:var(--gold)}
     </article>
 
     <article class="pcard reveal">
-      <div class="pimg">[ORIO cycloidal drive render]</div>
+      <div class="pimg" style="background:#F4F3EF"><img src="{{ '/assets/images/orio/cycloidal-drive.jpg' | relative_url }}" alt="CAD render of the 3D-printed cycloidal drive" loading="lazy" style="object-fit:contain"></div>
       <div class="pbody">
         <div class="ptop"><span class="ptag">02 / MECHANICAL · ELECTRONICS</span><span class="pstatus">● PROTOTYPING</span></div>
         <h3>ORIO: 3D-Printed Equatorial Star Tracker</h3>
-        <p>Equatorial mount that tracks the sky at the sidereal rate for astrophotography. Cycloidal + belt drives, print-in-place hinged base for polar alignment, ESP32 web control. With the TAMU Munnerlyn Astronomical Instrumentation Lab.</p>
-        <div class="chips"><span class="chip">NEMA 17 · 29 N·cm</span><span class="chip">2-axis drive</span><span class="chip">14.8 V LiPo</span><span class="chip">sidereal tracking</span></div>
+        <p>Camera mount that turns with the sky at the sidereal rate so stars stay sharp in long exposures. A 20:1 cycloidal drive plus belt stage for low backlash, a print-in-place hinged base for polar alignment, and ESP32 web control.</p>
+        <div class="chips"><span class="chip">20:1 cycloidal stage</span><span class="chip">2 kg payload target</span><span class="chip">NEMA 17 · 29 N·cm</span><span class="chip">sidereal tracking</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">SolidWorks</span><span class="tool">ESP32</span><span class="tool">TMC2209</span><span class="tool">3D Printing</span></div>
-          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
+          <button class="btn-solid" type="button" data-open="pm-orio" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -388,6 +388,74 @@ footer b{font-weight:400;color:var(--gold)}
   </div>
 </dialog>
 
+<!-- ORIO popup -->
+<dialog class="pm" id="pm-orio" aria-labelledby="pm-orio-title">
+  <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
+  <div class="pm-in">
+    <div class="pm-head">
+      <span class="ptag">02 / MECHANICAL · ELECTRONICS · TEAM PROJECT</span>
+      <h2 id="pm-orio-title">ORIO: 3D-Printed Equatorial Star Tracker</h2>
+      <div class="chips"><span class="chip">● prototyping</span><span class="chip">fall 2025 – spring 2026</span></div>
+    </div>
+
+    <div class="gallery">
+      <div class="pm-main"><img src="{{ '/assets/images/orio/cycloidal-drive.jpg' | relative_url }}" alt="Cycloidal drive CAD"></div>
+      <p class="pm-cap">Cycloidal drive in SolidWorks: 21 pins around a 60 mm pitch circle for a 20:1 reduction</p>
+      <div class="thumbs" role="group" aria-label="ORIO images">
+        <button type="button" aria-current="true" data-src="{{ '/assets/images/orio/cycloidal-drive.jpg' | relative_url }}" data-cap="Cycloidal drive in SolidWorks: 21 pins around a 60 mm pitch circle for a 20:1 reduction"><img src="{{ '/assets/images/orio/cycloidal-drive.jpg' | relative_url }}" alt="Cycloidal drive CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/cycloidal-housing.jpg' | relative_url }}" data-cap="Cycloidal housing with the ring of pins and output holes"><img src="{{ '/assets/images/orio/cycloidal-housing.jpg' | relative_url }}" alt="Cycloidal housing CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/hinged-base.jpg' | relative_url }}" data-cap="Print-in-place hinged base: one plate on the tripod, one carrying the camera and gearbox, opened to set the polar angle"><img src="{{ '/assets/images/orio/hinged-base.jpg' | relative_url }}" alt="Hinged base CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/planetary-gearbox.jpg' | relative_url }}" data-cap="First approach: a 3D-printed planetary gearbox, later replaced by the cycloidal drive"><img src="{{ '/assets/images/orio/planetary-gearbox.jpg' | relative_url }}" alt="Planetary gearbox CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/tripod-adapter.jpg' | relative_url }}" data-cap="Tripod adapter modeled to the 3/8 in thread we measured off the tripod"><img src="{{ '/assets/images/orio/tripod-adapter.jpg' | relative_url }}" alt="Tripod adapter CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/base-plate.jpg' | relative_url }}" data-cap="Base plate that seats on the tripod head"><img src="{{ '/assets/images/orio/base-plate.jpg' | relative_url }}" alt="Base plate CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/tripod-sketch.jpg' | relative_url }}" data-cap="Hand-measured sketch of the tripod head, used to size the base"><img src="{{ '/assets/images/orio/tripod-sketch.jpg' | relative_url }}" alt="Tripod measurement sketch"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/concept-sketch.jpg' | relative_url }}" data-cap="Early concept sketch: camera holder, belt system, gearbox and the two rotation axes"><img src="{{ '/assets/images/orio/concept-sketch.jpg' | relative_url }}" alt="Concept sketch"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/wiring.jpg' | relative_url }}" data-cap="Wiring: 14.8 V LiPo, 5 A fuse, buck converter to the ESP32, two TMC2209 drivers and NEMA 17 steppers"><img src="{{ '/assets/images/orio/wiring.jpg' | relative_url }}" alt="Wiring diagram"></button>
+        <button type="button" data-src="{{ '/assets/images/orio/breadboard.jpg' | relative_url }}" data-cap="Breadboard prototype layout for the stepper drivers"><img src="{{ '/assets/images/orio/breadboard.jpg' | relative_url }}" alt="Breadboard layout"></button>
+      </div>
+    </div>
+
+    <div class="pm-body"><p>Stars drift across the sky at the sidereal rate, about 15 arcseconds every second. Leave a camera still for a long exposure and they smear into trails. ORIO is a 3D-printed equatorial mount that sits on a normal tripod and turns the camera with the sky, so stars stay as points.</p></div>
+
+    <div class="pm-grid">
+      <div class="pm-box">
+        <h3>REQUIREMENTS</h3>
+        <ul>
+          <li>Track about the right ascension axis at the sidereal rate.</li>
+          <li>Minimal star drift over a 30 s exposure with a 50 mm lens.</li>
+          <li>Carry at least 2 kg of camera and lens.</li>
+          <li>Mount to standard 1/4"-20 and 3/8" tripod and camera threads.</li>
+          <li>Reduce backlash, and run about 2 hours on battery.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>THE GEARING PROBLEM</h3>
+        <p>To hit roughly 0.3–0.5 arcseconds per motor step, the drive needs a total reduction of about 400–720:1. Printed spur gears have too much backlash at that precision, which shows up as streaked stars.</p>
+      </div>
+      <div class="pm-box">
+        <h3>DESIGN DECISIONS</h3>
+        <ul>
+          <li>Started with a 3D-printed planetary gearbox, then moved to a cycloidal drive after review feedback that cycloidals have near-zero backlash.</li>
+          <li>Cycloidal stage: 21 pins, 60 mm pitch radius, 1.5 mm eccentricity, for 20:1 in one stage.</li>
+          <li>Belt stage from a 1" to a 4.5" pulley multiplies the reduction further.</li>
+          <li>Print-in-place hinged base for manual polar alignment.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>ELECTRONICS &amp; CONTROL</h3>
+        <ul>
+          <li>ESP32 driving two NEMA 17 steppers through TMC2209 drivers.</li>
+          <li>14.8 V 4S LiPo with a 5 A fuse and buck converter; about 1 hour at 3 A.</li>
+          <li>Web app (HTML, CSS, JavaScript) for manual setup and automatic sidereal tracking.</li>
+          <li>Next: a GoTo mode that points at any object once calibrated.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools"><span class="tool">SolidWorks</span><span class="tool">3D Printing</span><span class="tool">Cycloidal drives</span><span class="tool">ESP32</span><span class="tool">TMC2209</span><span class="tool">HTML/CSS/JS</span></div>
+  </div>
+</dialog>
+
 <!-- generic popup for the other projects (filled from the card) -->
 <dialog class="pm" id="pm-generic" aria-labelledby="pm-g-title">
   <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
@@ -449,15 +517,18 @@ footer b{font-weight:400;color:var(--gold)}
       openPm(d, btn);
     });
   });
-  // DRON gallery thumbnails
-  var mainImg = document.getElementById('pm-dron-img');
-  var cap = document.getElementById('pm-dron-cap');
-  document.querySelectorAll('#pm-dron .thumbs button').forEach(function (t) {
-    t.addEventListener('click', function () {
-      mainImg.src = t.getAttribute('data-src');
-      mainImg.alt = t.querySelector('img').alt;
-      cap.textContent = t.getAttribute('data-cap');
-      document.querySelectorAll('#pm-dron .thumbs button').forEach(function (o) { o.setAttribute('aria-current', o === t ? 'true' : 'false'); });
+  // gallery thumbnails (every popup with a .gallery)
+  document.querySelectorAll('dialog.pm .gallery').forEach(function (g) {
+    var mainImg = g.querySelector('.pm-main img');
+    var cap = g.querySelector('.pm-cap');
+    var thumbs = g.querySelectorAll('.thumbs button');
+    thumbs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        mainImg.src = t.getAttribute('data-src');
+        mainImg.alt = t.querySelector('img').alt;
+        cap.textContent = t.getAttribute('data-cap');
+        thumbs.forEach(function (o) { o.setAttribute('aria-current', o === t ? 'true' : 'false'); });
+      });
     });
   });
 
