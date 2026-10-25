@@ -73,6 +73,32 @@ header.nav nav a:hover{color:var(--gold)}
 .btn-solid{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;background:var(--text);color:var(--bg);text-decoration:none;font-size:14px;font-weight:500}
 .btn-solid:hover{background:var(--gold);color:var(--bg)}
 
+/* project popup */
+body.locked{overflow:hidden}
+dialog.pm{width:min(1040px,calc(100vw - 32px));max-height:calc(100vh - 48px);padding:0;border:1px solid var(--line2);border-radius:18px;background:var(--card);color:var(--text);overflow:auto}
+dialog.pm::backdrop{background:rgba(5,6,9,.78);backdrop-filter:blur(4px)}
+dialog.pm[open]{animation:pop .28s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+.pm-close{position:sticky;top:12px;float:right;margin:12px 12px 0 0;width:44px;height:44px;border-radius:50%;border:1px solid var(--line2);background:var(--bg);color:var(--text);font-size:20px;cursor:pointer;z-index:2}
+.pm-close:hover{border-color:var(--gold);color:var(--gold)}
+.pm-in{padding:32px;display:flex;flex-direction:column;gap:22px}
+.pm-head{display:flex;flex-direction:column;gap:10px;padding-right:40px}
+.pm-head h2{margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1.05}
+.pm-main{width:100%;aspect-ratio:16/10;background:#F4F3EF;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.pm-main img{width:100%;height:100%;object-fit:contain}
+.pm-cap{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);margin:10px 0 0}
+.thumbs{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
+.thumbs button{flex:0 0 96px;height:72px;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;background:#F4F3EF;cursor:pointer}
+.thumbs button[aria-current="true"]{border-color:var(--gold)}
+.thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.pm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}
+.pm-box{background:var(--well);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.pm-box h3{margin:0;font-family:'JetBrains Mono',monospace;font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--gold)}
+.pm-box p,.pm-box li{margin:0;font-size:14px;line-height:1.65;color:var(--body)}
+.pm-box ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.pm-body p{margin:0;font-size:15px;line-height:1.7;color:var(--body)}
+@media (max-width:600px){.pm-in{padding:20px}}
+
 /* about */
 .about{display:flex;flex-direction:column;gap:40px;align-items:center}
 .about-title{margin:0;padding:18px 32px;background:var(--well);border:1px solid var(--line);border-radius:12px;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4vw,40px);text-align:center}
@@ -169,15 +195,15 @@ footer b{font-weight:400;color:var(--gold)}
 
   <div class="projects">
     <article class="pcard reveal">
-      <div class="pimg">[DRON chassis render]</div>
+      <div class="pimg" style="background:#F4F3EF"><img src="{{ '/assets/images/dron/v4-legs.jpg' | relative_url }}" alt="CAD render of the V4 drone chassis with carbon fiber arms and legs" loading="lazy" style="object-fit:contain"></div>
       <div class="pbody">
-        <div class="ptop"><span class="ptag">01 / AEROSPACE · AUTONOMY</span><span class="pstatus">● SIMULATION TESTED</span></div>
+        <div class="ptop"><span class="ptag">01 / AEROSPACE · MECHANICAL</span><span class="pstatus">● FLIGHT TESTED</span></div>
         <h3>DRON: Disaster Response Observation Network</h3>
-        <p>Team UAV swarm to give first responders eyes on structural fires. Modular PA6 glass-fiber chassis with heat-set inserts, thermal + stereo cameras on a Raspberry Pi, and multi-drone PX4 autonomy demonstrated in Gazebo.</p>
-        <div class="chips"><span class="chip">~500 g payload</span><span class="chip">12–15 min est. flight</span><span class="chip">2× stereo + thermal</span><span class="chip">multi-agent SITL</span></div>
+        <p>Quadcopter swarm built to give firefighters eyes on structural fires. On the mechanical team: 3D-printed chassis, carbon fiber tube arms and legs, a modular battery holder, and FEA drop tests. Flight-tested on hardware in March 2026.</p>
+        <div class="chips"><span class="chip">flown Mar 2026</span><span class="chip">16 mm CF tube arms</span><span class="chip">FEA drop tests</span><span class="chip">~$430 / drone</span></div>
         <div class="pfoot">
-          <div class="tools"><span class="tool">SolidWorks</span><span class="tool">PX4</span><span class="tool">ROS2</span><span class="tool">OpenCV</span><span class="tool">Unity</span></div>
-          <a class="btn-solid" href="{{ '/assets/images/DRON-poster.png' | relative_url }}">View project →</a>
+          <div class="tools"><span class="tool">SolidWorks</span><span class="tool">FEA</span><span class="tool">3D Printing</span><span class="tool">PX4</span><span class="tool">ROS2</span></div>
+          <button class="btn-solid" type="button" data-open="pm-dron" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -191,7 +217,7 @@ footer b{font-weight:400;color:var(--gold)}
         <div class="chips"><span class="chip">NEMA 17 · 29 N·cm</span><span class="chip">2-axis drive</span><span class="chip">14.8 V LiPo</span><span class="chip">sidereal tracking</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">SolidWorks</span><span class="tool">ESP32</span><span class="tool">TMC2209</span><span class="tool">3D Printing</span></div>
-          <a class="btn-solid" href="#">View project →</a>
+          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -205,7 +231,7 @@ footer b{font-weight:400;color:var(--gold)}
         <div class="chips"><span class="chip">[metric]</span><span class="chip">[metric]</span><span class="chip">[metric]</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">[tool]</span><span class="tool">[tool]</span><span class="tool">MATLAB</span></div>
-          <a class="btn-solid" href="#">View project →</a>
+          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -219,7 +245,7 @@ footer b{font-weight:400;color:var(--gold)}
         <div class="chips"><span class="chip">PM2.5 + ozone</span><span class="chip">urban vs rural</span><span class="chip">AGU 2024</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">Python</span><span class="tool">Pandas</span><span class="tool">NumPy</span><span class="tool">Statistics</span></div>
-          <a class="btn-solid" href="#">View project →</a>
+          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -233,7 +259,7 @@ footer b{font-weight:400;color:var(--gold)}
         <div class="chips"><span class="chip">balloon-flown</span><span class="chip">RF transceiver</span><span class="chip">post-flight analysis</span></div>
         <div class="pfoot">
           <div class="tools"><span class="tool">RF Electronics</span><span class="tool">CAD</span><span class="tool">Data Analysis</span></div>
-          <a class="btn-solid" href="https://www.news9.com/story/64792306ef8f937d63ce0beb/oklahoma-teens-prepare-to-send-their-experiment-into-space">View project →</a>
+          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -301,6 +327,79 @@ footer b{font-weight:400;color:var(--gold)}
   <a class="mono" href="mailto:asbah.talal@gmail.com" style="font-size:15px">asbah.talal@gmail.com</a>
 </section>
 
+<!-- DRON popup -->
+<dialog class="pm" id="pm-dron" aria-labelledby="pm-dron-title">
+  <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
+  <div class="pm-in">
+    <div class="pm-head">
+      <span class="ptag">01 / AEROSPACE · MECHANICAL · TEAM PROJECT</span>
+      <h2 id="pm-dron-title">DRON: Disaster Response Observation Network</h2>
+      <div class="chips"><span class="chip">● flight tested</span><span class="chip">mechanical subteam</span><span class="chip">fall 2025 – spring 2026</span></div>
+    </div>
+
+    <div class="gallery">
+      <div class="pm-main"><img id="pm-dron-img" src="{{ '/assets/images/dron/v4-legs.jpg' | relative_url }}" alt="V4 drone CAD with carbon fiber arms and legs"></div>
+      <p class="pm-cap" id="pm-dron-cap">V4 production drone in SolidWorks: carbon fiber arms and legs</p>
+      <div class="thumbs" role="group" aria-label="DRON images">
+        <button type="button" aria-current="true" data-src="{{ '/assets/images/dron/v4-legs.jpg' | relative_url }}" data-cap="V4 production drone in SolidWorks: carbon fiber arms and legs"><img src="{{ '/assets/images/dron/v4-legs.jpg' | relative_url }}" alt="V4 drone CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/v4-chassis.jpg' | relative_url }}" data-cap="V4 chassis assembly with camera bay and bolted arm mounts"><img src="{{ '/assets/images/dron/v4-chassis.jpg' | relative_url }}" alt="V4 chassis CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/v4-exploded.jpg' | relative_url }}" data-cap="Exploded view: top and bottom halves join with a lip-and-groove interlock"><img src="{{ '/assets/images/dron/v4-exploded.jpg' | relative_url }}" alt="Exploded chassis CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/battery-holder.jpg' | relative_url }}" data-cap="Configurable battery slots for a custom 4S 18650 pack"><img src="{{ '/assets/images/dron/battery-holder.jpg' | relative_url }}" alt="Battery holder CAD"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/fea-tube.jpg' | relative_url }}" data-cap="FEA drop test, single leg tube landing lengthwise: ~47 MPa spread along the tube"><img src="{{ '/assets/images/dron/fea-tube.jpg' | relative_url }}" alt="FEA on a leg tube"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/fea-foot.jpg' | relative_url }}" data-cap="FEA drop test, T-shaped foot: ~119 MPa concentrated at the joint"><img src="{{ '/assets/images/dron/fea-foot.jpg' | relative_url }}" alt="FEA on the T-shaped foot"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/test-drone.jpg' | relative_url }}" data-cap="The &quot;Duck Tape&quot; test drone that flew in March 2026"><img src="{{ '/assets/images/dron/test-drone.jpg' | relative_url }}" alt="Test drone photo"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/thermal.jpg' | relative_url }}" data-cap="Onboard thermal camera view of a soldering iron"><img src="{{ '/assets/images/dron/thermal.jpg' | relative_url }}" alt="Thermal camera view"></button>
+        <button type="button" data-src="{{ '/assets/images/dron/depth-map.jpg' | relative_url }}" data-cap="Depth map generated from the two onboard cameras"><img src="{{ '/assets/images/dron/depth-map.jpg' | relative_url }}" alt="Stereo depth map"></button>
+      </div>
+    </div>
+
+    <div class="pm-body"><p>Firefighters at a structural fire need to know where the hotspots are before they go in. DRON is a swarm of small quadcopters that fly around a burning building, map it in 3D with two cameras, and paint thermal data onto the map for first responders. I worked on the mechanical subteam, designing and iterating on the airframe.</p></div>
+
+    <div class="pm-grid">
+      <div class="pm-box">
+        <h3>THE PROBLEM</h3>
+        <p>The chassis had to carry a Raspberry Pi 5, flight controller, GPS, two cameras and a thermal camera, survive a 10 m fall, and keep a 1.5 factor of safety, while staying light enough for 10 minutes of flight.</p>
+      </div>
+      <div class="pm-box">
+        <h3>WHAT BROKE</h3>
+        <p>During motor testing, PLA and polycarbonate arms snapped. One motor was underperforming, so another spun up to compensate and overloaded its arm. We moved to glass-fiber PLA, then to carbon fiber tubes.</p>
+      </div>
+      <div class="pm-box">
+        <h3>DESIGN DECISIONS</h3>
+        <ul>
+          <li>Weighted trade studies for arm material, leg material and chassis shape; carbon fiber won both material studies.</li>
+          <li>Arms and legs from 16 mm OD, 2 mm wall carbon fiber tubes with matching M3 hole patterns, so parts swap.</li>
+          <li>Hybrid-X chassis with 84 mm of clear interior for components and wiring.</li>
+          <li>Custom 4S 18650 pack for under $25, vs $65+ for an off-the-shelf battery.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>RESULTS</h3>
+        <ul>
+          <li>Sustained flight on hardware in March 2026, holding steady in wind.</li>
+          <li>The leg failed at its intended failure point on a hard landing, protecting the electronics.</li>
+          <li>FEA drop tests on the legs guided the foot and joint design.</li>
+          <li>~$430 per drone in parts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools"><span class="tool">SolidWorks</span><span class="tool">FEA</span><span class="tool">3D Printing (PLA, PLA-GF)</span><span class="tool">Carbon fiber</span><span class="tool">PX4</span><span class="tool">ROS2</span><span class="tool">OpenCV</span></div>
+  </div>
+</dialog>
+
+<!-- generic popup for the other projects (filled from the card) -->
+<dialog class="pm" id="pm-generic" aria-labelledby="pm-g-title">
+  <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
+  <div class="pm-in">
+    <div class="pm-head"><span class="ptag" id="pm-g-tag"></span><h2 id="pm-g-title"></h2></div>
+    <div class="pm-main" id="pm-g-media"></div>
+    <div class="pm-body"><p id="pm-g-desc"></p></div>
+    <div class="chips" id="pm-g-chips"></div>
+    <div class="tools" id="pm-g-tools"></div>
+  </div>
+</dialog>
+
 <footer class="wrap">
   <span>built by asbah · stillwater, ok</span>
   <span>SIDEREAL DAY <b>23h 56m 4s</b></span>
@@ -312,6 +411,55 @@ footer b{font-weight:400;color:var(--gold)}
   var step = function () { var f = track.querySelector('figure'); return f ? f.getBoundingClientRect().width + 16 : 316; };
   document.getElementById('prev').addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
   document.getElementById('next').addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+  // ---- project popups (stay on this page) ----
+  var lastBtn = null;
+  function openPm(d, btn) {
+    lastBtn = btn;
+    if (typeof d.showModal === 'function') { d.showModal(); } else { d.setAttribute('open', ''); }
+    document.body.classList.add('locked');
+    d.scrollTop = 0;
+  }
+  function closePm(d) {
+    if (typeof d.close === 'function') { d.close(); } else { d.removeAttribute('open'); }
+  }
+  document.querySelectorAll('dialog.pm').forEach(function (d) {
+    d.addEventListener('close', function () { document.body.classList.remove('locked'); if (lastBtn) lastBtn.focus(); });
+    d.addEventListener('click', function (e) { if (e.target === d) closePm(d); });
+    d.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closePm(d); }); });
+  });
+  function fillGeneric(card) {
+    var q = function (sel) { return card.querySelector(sel); };
+    document.getElementById('pm-g-tag').textContent = q('.ptag') ? q('.ptag').textContent : '';
+    document.getElementById('pm-g-title').textContent = q('h3') ? q('h3').textContent : '';
+    document.getElementById('pm-g-desc').textContent = q('.pbody p') ? q('.pbody p').textContent : '';
+    var media = document.getElementById('pm-g-media');
+    media.innerHTML = '';
+    var img = q('.pimg img');
+    if (img) { var c = img.cloneNode(); c.removeAttribute('loading'); media.appendChild(c); media.style.display = ''; }
+    else { media.style.display = 'none'; }
+    document.getElementById('pm-g-chips').innerHTML = q('.chips') ? q('.chips').innerHTML : '';
+    document.getElementById('pm-g-tools').innerHTML = q('.tools') ? q('.tools').innerHTML : '';
+  }
+  document.querySelectorAll('[data-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var d = document.getElementById(btn.getAttribute('data-open'));
+      if (!d) return;
+      if (d.id === 'pm-generic') fillGeneric(btn.closest('.pcard'));
+      openPm(d, btn);
+    });
+  });
+  // DRON gallery thumbnails
+  var mainImg = document.getElementById('pm-dron-img');
+  var cap = document.getElementById('pm-dron-cap');
+  document.querySelectorAll('#pm-dron .thumbs button').forEach(function (t) {
+    t.addEventListener('click', function () {
+      mainImg.src = t.getAttribute('data-src');
+      mainImg.alt = t.querySelector('img').alt;
+      cap.textContent = t.getAttribute('data-cap');
+      document.querySelectorAll('#pm-dron .thumbs button').forEach(function (o) { o.setAttribute('aria-current', o === t ? 'true' : 'false'); });
+    });
+  });
 
   var items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
