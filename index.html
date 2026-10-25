@@ -237,9 +237,23 @@ footer b{font-weight:400;color:var(--gold)}
     </article>
 
     <article class="pcard reveal">
+      <div class="pimg"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/268/327/datas/gallery.jpg" alt="PetPulse home page" loading="lazy"></div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">04 / HARDWARE · SOFTWARE · HACKATHON</span><span class="pstatus">● 2 PRIZES</span></div>
+        <h3>PetPulse: AI Pet Health Monitor</h3>
+        <p>Built in a weekend at Hacklahoma 2026. An Arduino accelerometer detects when a pet starts moving, grabs a photo and 5 seconds of audio, and Gemini turns it into a plain-English update for the owner. Won Best Hardware and Best Use of DigitalOcean.</p>
+        <div class="chips"><span class="chip">Best Hardware</span><span class="chip">Best Use of DigitalOcean</span><span class="chip">225+ hackers</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">Arduino</span><span class="tool">React</span><span class="tool">FastAPI</span><span class="tool">PostgreSQL</span><span class="tool">Gemini</span></div>
+          <button class="btn-solid" type="button" data-open="pm-petpulse" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="pcard reveal">
       <div class="pimg"><img src="{{ '/assets/images/IMG_3772.jpg' | relative_url }}" alt="Cubes in Space payload" loading="lazy"></div>
       <div class="pbody">
-        <div class="ptop"><span class="ptag">04 / FLIGHT HARDWARE</span><span class="pstatus">● FLOWN</span></div>
+        <div class="ptop"><span class="ptag">05 / FLIGHT HARDWARE</span><span class="pstatus">● FLOWN</span></div>
         <h3>NASA Cubes in Space: RF Payload</h3>
         <p>Designed an RF transceiver payload flown on a NASA scientific balloon, then analyzed post-flight data on radio-wave behavior at high altitude.</p>
         <div class="chips"><span class="chip">balloon-flown</span><span class="chip">RF transceiver</span><span class="chip">post-flight analysis</span></div>
@@ -502,6 +516,74 @@ footer b{font-weight:400;color:var(--gold)}
     </div>
 
     <div class="tools"><span class="tool">EPA &amp; state health data</span><span class="tool">Data cleaning</span><span class="tool">Normalization &amp; ranking</span><span class="tool">Data visualization</span></div>
+  </div>
+</dialog>
+
+<!-- PetPulse popup -->
+<dialog class="pm" id="pm-petpulse" aria-labelledby="pm-pp-title">
+  <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
+  <div class="pm-in">
+    <div class="pm-head">
+      <span class="ptag">04 / HARDWARE · SOFTWARE · HACKLAHOMA 2026</span>
+      <h2 id="pm-pp-title">PetPulse: AI Pet Health Monitor</h2>
+      <div class="chips"><span class="chip">● Winner, Best Hardware</span><span class="chip">● Winner, Best Use of DigitalOcean</span><span class="chip">team of 4</span></div>
+    </div>
+
+    <div class="gallery">
+      <div class="pm-main"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/268/327/datas/gallery.jpg" alt="PetPulse home page"></div>
+      <p class="pm-cap">Home page: track your pet's health, behavior and routine</p>
+      <div class="thumbs" role="group" aria-label="PetPulse screenshots">
+        <button type="button" aria-current="true" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/268/327/datas/gallery.jpg" data-cap="Home page: track your pet's health, behavior and routine"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/268/327/datas/gallery.jpg" alt="PetPulse home page" loading="lazy"></button>
+        <button type="button" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/942/datas/gallery.jpg" data-cap="Dashboard: AI summaries of each detected event"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/942/datas/gallery.jpg" alt="PetPulse dashboard" loading="lazy"></button>
+        <button type="button" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/878/datas/gallery.jpg" data-cap="Status page: condition, status and event breakdown"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/878/datas/gallery.jpg" alt="PetPulse status page" loading="lazy"></button>
+        <button type="button" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/890/datas/gallery.jpg" data-cap="Calendar of logged events and vet visits"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/890/datas/gallery.jpg" alt="PetPulse calendar" loading="lazy"></button>
+        <button type="button" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/904/datas/gallery.jpg" data-cap="Community page for sharing pet updates"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/904/datas/gallery.jpg" alt="PetPulse community page" loading="lazy"></button>
+        <button type="button" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/742/datas/gallery.jpg" data-cap="Accelerometer readings used to detect movement changes"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/742/datas/gallery.jpg" alt="Sensor metric readout" loading="lazy"></button>
+        <button type="button" data-src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/743/datas/gallery.jpg" data-cap="Collecting sensor metrics to train the event model"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/267/743/datas/gallery.jpg" alt="Metric collection for training" loading="lazy"></button>
+      </div>
+    </div>
+
+    <div class="pm-body"><p><em>Your pet can't talk, but PetPulse can help you understand.</em> Pet cameras record hours of footage but never tell you what happened. We wanted something that answers the questions owners actually have: did my dog eat, is she sleeping normally, did something stress her out while I was gone?</p></div>
+
+    <div class="pm-grid">
+      <div class="pm-box">
+        <h3>HOW IT WORKS</h3>
+        <ul>
+          <li>A 3-axis accelerometer on an Arduino watches for changes in movement.</li>
+          <li>When something changes, it captures a snapshot and about 5 seconds of audio.</li>
+          <li>Gemini reads the photo and sound and returns a structured result: condition (sleep, eating, mood), status and a timestamped summary.</li>
+          <li>A scoring algorithm decides what is worth flagging and sends an alert.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>WHAT WE BUILT</h3>
+        <ul>
+          <li>React + Vite web app: dashboard, calendar, community, camera and settings.</li>
+          <li>Python FastAPI backend with PostgreSQL for pets, media, AI results and vet history.</li>
+          <li>Breed finder from a photo, bark and whine analysis, and pet profiles with a QR code for vets and sitters.</li>
+          <li>Deployed on DigitalOcean, with Firebase Auth and Cloudflare.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>WHAT WAS HARD</h3>
+        <ul>
+          <li>Getting the Arduino talking to a computer over a private network.</li>
+          <li>Telling meaningful movement apart from sensor noise.</li>
+          <li>Streaming from a webcam that doesn't stream on its own, which we routed through Twitch.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>WHAT I LEARNED</h3>
+        <ul>
+          <li>Structured AI output is far more reliable than free-form descriptions.</li>
+          <li>Sensor systems need retries and storage, not just a model.</li>
+          <li>Next up: per-pet baselines to cut false alarms, and YOLOv8 for posture and activity.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools"><span class="tool">Arduino</span><span class="tool">Accelerometer</span><span class="tool">React</span><span class="tool">Python FastAPI</span><span class="tool">PostgreSQL</span><span class="tool">Gemini</span><span class="tool">DigitalOcean</span></div>
+    <div><a class="btn-ghost" href="https://devpost.com/software/petpulse-l4obma" target="_blank" rel="noopener">See it on Devpost ↗</a></div>
   </div>
 </dialog>
 
