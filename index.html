@@ -263,6 +263,20 @@ footer b{font-weight:400;color:var(--gold)}
         </div>
       </div>
     </article>
+
+    <article class="pcard reveal">
+      <div class="pimg" style="background:#F4F3EF"><img src="{{ '/assets/images/tsa/urban-sprawl-2025.jpg' | relative_url }}" alt="Research poster: Impact of Urban Sprawl and Green Infrastructure" loading="lazy" style="object-fit:contain"></div>
+      <div class="pbody">
+        <div class="ptop"><span class="ptag">06 / DATA SCIENCE · RESEARCH</span><span class="pstatus">● 3RD NATIONALLY</span></div>
+        <h3>TSA Data Science &amp; Analytics</h3>
+        <p>Three years of data research turning public datasets into one clear argument. 2023: a full national report on how poverty and race drive incarceration and debt. 2024: the follow-up poster. 2025: how urban sprawl and green infrastructure affect the environment and housing costs.</p>
+        <div class="chips"><span class="chip">3rd at TSA Nationals</span><span class="chip">1st in Oklahoma ×2</span><span class="chip">2023 – 2025</span></div>
+        <div class="pfoot">
+          <div class="tools"><span class="tool">Data research</span><span class="tool">Statistics</span><span class="tool">Visualization</span></div>
+          <button class="btn-solid" type="button" data-open="pm-tsa" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -584,6 +598,59 @@ footer b{font-weight:400;color:var(--gold)}
 
     <div class="tools"><span class="tool">Arduino</span><span class="tool">Accelerometer</span><span class="tool">React</span><span class="tool">Python FastAPI</span><span class="tool">PostgreSQL</span><span class="tool">Gemini</span><span class="tool">DigitalOcean</span></div>
     <div><a class="btn-ghost" href="https://devpost.com/software/petpulse-l4obma" target="_blank" rel="noopener">See it on Devpost ↗</a></div>
+  </div>
+</dialog>
+
+<!-- TSA Data Science popup -->
+<dialog class="pm" id="pm-tsa" aria-labelledby="pm-tsa-title">
+  <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
+  <div class="pm-in">
+    <div class="pm-head">
+      <span class="ptag">06 / DATA SCIENCE · RESEARCH · TECHNOLOGY STUDENT ASSOCIATION</span>
+      <h2 id="pm-tsa-title">TSA Data Science &amp; Analytics</h2>
+      <div class="chips"><span class="chip">● 3rd at TSA Nationals</span><span class="chip">● 1st in Oklahoma ×2</span><span class="chip">2023 – 2025</span></div>
+    </div>
+
+    <div class="gallery">
+      <div class="pm-main" style="aspect-ratio:4/3"><img src="{{ '/assets/images/tsa/urban-sprawl-2025.jpg' | relative_url }}" alt="Impact of Urban Sprawl and Green Infrastructure poster"></div>
+      <p class="pm-cap">2025: Impact of Urban Sprawl &amp; Green Infrastructure</p>
+      <div class="thumbs" role="group" aria-label="Posters">
+        <button type="button" aria-current="true" data-src="{{ '/assets/images/tsa/urban-sprawl-2025.jpg' | relative_url }}" data-cap="2025: Impact of Urban Sprawl &amp; Green Infrastructure"><img src="{{ '/assets/images/tsa/urban-sprawl-2025.jpg' | relative_url }}" alt="2025 poster"></button>
+        <button type="button" data-src="{{ '/assets/images/tsa/criminalization-2024.jpg' | relative_url }}" data-cap="2024: Criminalization of the Underprivileged poster"><img src="{{ '/assets/images/tsa/criminalization-2024.jpg' | relative_url }}" alt="2024 poster"></button>
+        <button type="button" data-src="{{ '/assets/images/tsa/report-prison-growth.jpg' | relative_url }}" data-cap="2023 national report: the surge in U.S. prison population, 1925–2021"><img src="{{ '/assets/images/tsa/report-prison-growth.jpg' | relative_url }}" alt="Report page on prison growth"></button>
+        <button type="button" data-src="{{ '/assets/images/tsa/report-racial-disparities.jpg' | relative_url }}" data-cap="2023 national report: racial and ethnic disparities in imprisonment rates"><img src="{{ '/assets/images/tsa/report-racial-disparities.jpg' | relative_url }}" alt="Report page on racial disparities"></button>
+        <button type="button" data-src="{{ '/assets/images/tsa/report-parent-income.jpg' | relative_url }}" data-cap="2023 national report: incarceration by parent income rank"><img src="{{ '/assets/images/tsa/report-parent-income.jpg' | relative_url }}" alt="Report page on parent income"></button>
+        <button type="button" data-src="{{ '/assets/images/tsa/report-fines.jpg' | relative_url }}" data-cap="2023 national report: cities that lean most on fines have 5× the typical share of Black residents"><img src="{{ '/assets/images/tsa/report-fines.jpg' | relative_url }}" alt="Report page on fines revenue"></button>
+      </div>
+    </div>
+
+    <div class="pm-body"><p>The Data Science &amp; Analytics event asks you to pick a real-world problem, gather public data on it, and make a clear, evidence-backed case in a written report and a research poster. I competed three years in a row, starting at the 2023 National Conference in Louisville.</p></div>
+
+    <div class="pm-grid">
+      <div class="pm-box">
+        <h3>2025 · URBAN SPRAWL &amp; GREEN INFRASTRUCTURE</h3>
+        <ul>
+          <li>Question: how do cities spreading outward affect the environment, the economy and social equity?</li>
+          <li>Pulled data from the EPA, National Library of Medicine, University of Michigan's Center for Sustainable Systems and the Federal Reserve.</li>
+          <li>Showed rising land surface temperatures as cities grow, green buildings lasting ~29 years longer than conventional ones, and home prices pulling away from median income.</li>
+          <li>Recommended green zoning, permeable pavement, green roofs and mixed-use, transit-oriented development.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>2023–24 · CRIMINALIZATION OF THE UNDERPRIVILEGED</h3>
+        <ul>
+          <li>Question: how do poverty and race affect who ends up in prison, and what happens after?</li>
+          <li>Pulled data from the Census Bureau, Bureau of Justice Statistics, U.S. Sentencing Commission and Brookings Institution.</li>
+          <li>A full written report for the 2023 National Conference, then a poster for the 2024 state conference.</li>
+          <li>Boys from the poorest 10% of families are 20× more likely to be in prison by their early 30s than those from the richest families.</li>
+          <li>The 50 cities that rely most on fines have about 5× the typical city's share of Black residents (18.9% vs 3.8%).</li>
+          <li>Cities that cut low-level arrests by 50%+ saw 57% fewer police shootings with no rise in reported crime.</li>
+          <li>Argued for policy changes to reduce incarceration tied to debt and poverty.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools"><span class="tool">Public data research</span><span class="tool">Statistics</span><span class="tool">Data visualization</span><span class="tool">Policy analysis</span></div>
   </div>
 </dialog>
 
