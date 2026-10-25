@@ -119,19 +119,16 @@ dialog.pm[open]{animation:pop .28s ease-out}
 .about-text p{margin:0}
 
 /* carousel */
-.car-head{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:20px}
+.car-head{margin-bottom:24px}
 .car-head h2{margin:8px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:40px}
-.arrows{display:flex;gap:10px}
-.arrow{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:transparent;color:var(--text);font-size:18px;cursor:pointer}
-.arrow:hover{border-color:var(--gold);color:var(--gold)}
-.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:14px}
-.track::-webkit-scrollbar{display:none}
-.track figure{flex:0 0 auto;width:min-content;margin:0;scroll-snap-align:start;display:flex;flex-direction:column;gap:8px}
-.frame{height:420px;border-radius:12px;background:var(--well);border:1px solid var(--line);overflow:hidden}
-.frame img{height:100%;width:auto;display:block}
-@media (max-width:600px){.frame{height:300px}}
-.track figcaption{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim)}
-.track figcaption span{color:var(--gold)}
+.photo-grid{display:flex;flex-wrap:wrap;gap:16px}
+.photo-grid figure{margin:0;min-width:0;flex-grow:var(--ar);flex-basis:calc(var(--ar) * 240px);display:flex;flex-direction:column;gap:8px}
+.photo-grid .ph{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--well)}
+.photo-grid img{width:100%;height:auto;display:block;transition:transform .5s ease}
+.photo-grid figure:hover img{transform:scale(1.03)}
+.photo-grid figcaption{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.photo-grid figcaption span{color:var(--gold)}
+@media (max-width:600px){.photo-grid{gap:20px}.photo-grid figure{flex:1 1 100%}}
 
 /* reads */
 .shelf{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;border-bottom:2px solid var(--text);padding-bottom:2px;margin:20px 0 8px}
@@ -318,21 +315,15 @@ footer b{font-weight:400;color:var(--gold)}
 
 <!-- PHOTOGRAPHY -->
 <section class="wrap section" aria-label="Photography">
-  <div class="car-head">
-    <div><span class="eyebrow">THROUGH MY LENS</span><h2>Photography</h2></div>
-    <div class="arrows">
-      <button class="arrow" type="button" id="prev" aria-label="Previous photos">←</button>
-      <button class="arrow" type="button" id="next" aria-label="Next photos">→</button>
-    </div>
-  </div>
-  <div class="track" id="track">
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/kebab-stall.jpg' | relative_url }}" alt="A boy in a red jacket fanning coals at a kebab stall at night" loading="lazy"></div><figcaption><span>FR 01</span> · Seekh kebabs over the coals</figcaption></figure>
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/karachi-bus.jpg' | relative_url }}" alt="A decorated bus on route 4Q in front of a mosque in Karachi" loading="lazy"></div><figcaption><span>FR 02</span> · Karachi</figcaption></figure>
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/empress-market-door.jpg' | relative_url }}" alt="Shoppers entering the blue doorway of Empress Market" loading="lazy"></div><figcaption><span>FR 03</span> · Empress Market, Karachi</figcaption></figure>
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/window-to-the-lake.jpg' | relative_url }}" alt="A beach, pier and sailboat framed by three windows" loading="lazy"></div><figcaption><span>FR 04</span> · Through the window</figcaption></figure>
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/brooklyn-bridge.jpg' | relative_url }}" alt="A sailboat passing under the Brooklyn Bridge" loading="lazy"></div><figcaption><span>FR 05</span> · Brooklyn Bridge, New York</figcaption></figure>
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/water-lily.jpg' | relative_url }}" alt="A pale pink water lily among lily pads on dark water" loading="lazy"></div><figcaption><span>FR 06</span> · Water lily</figcaption></figure>
-    <figure><div class="frame"><img src="{{ '/assets/images/photos/empress-market-tower.jpg' | relative_url }}" alt="The sandstone clock tower of Empress Market" loading="lazy"></div><figcaption><span>FR 07</span> · Empress Market clock tower, Karachi</figcaption></figure>
+  <div class="car-head"><span class="eyebrow">THROUGH MY LENS</span><h2>Photography</h2></div>
+  <div class="photo-grid">
+    <figure style="--ar:0.74"><div class="ph"><img src="{{ '/assets/images/photos/kebab-stall.jpg' | relative_url }}" alt="A boy in a red jacket fanning coals at a kebab stall at night" loading="lazy"></div><figcaption><span>FR 01</span> · Seekh kebabs over the coals</figcaption></figure>
+    <figure style="--ar:1.608"><div class="ph"><img src="{{ '/assets/images/photos/karachi-bus.jpg' | relative_url }}" alt="A decorated bus on route 4Q in front of a mosque in Karachi" loading="lazy"></div><figcaption><span>FR 02</span> · Karachi</figcaption></figure>
+    <figure style="--ar:0.733"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-door.jpg' | relative_url }}" alt="Shoppers entering the blue doorway of Empress Market" loading="lazy"></div><figcaption><span>FR 03</span> · Empress Market, Karachi</figcaption></figure>
+    <figure style="--ar:1.626"><div class="ph"><img src="{{ '/assets/images/photos/window-to-the-lake.jpg' | relative_url }}" alt="A beach, pier and sailboat framed by three windows" loading="lazy"></div><figcaption><span>FR 04</span> · Through the window</figcaption></figure>
+    <figure style="--ar:0.685"><div class="ph"><img src="{{ '/assets/images/photos/brooklyn-bridge.jpg' | relative_url }}" alt="A sailboat passing under the Brooklyn Bridge" loading="lazy"></div><figcaption><span>FR 05</span> · Brooklyn Bridge, NYC</figcaption></figure>
+    <figure style="--ar:1.5"><div class="ph"><img src="{{ '/assets/images/photos/water-lily.jpg' | relative_url }}" alt="A pale pink water lily among lily pads on dark water" loading="lazy"></div><figcaption><span>FR 06</span> · Water lily</figcaption></figure>
+    <figure style="--ar:0.586"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-tower.jpg' | relative_url }}" alt="The sandstone clock tower of Empress Market" loading="lazy"></div><figcaption><span>FR 07</span> · Clock tower, Karachi</figcaption></figure>
   </div>
 </section>
 
@@ -693,10 +684,6 @@ footer b{font-weight:400;color:var(--gold)}
 
 <script>
 (function () {
-  var track = document.getElementById('track');
-  var step = function () { return Math.max(260, track.clientWidth * 0.6); };
-  document.getElementById('prev').addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-  document.getElementById('next').addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
 
   // ---- project popups (stay on this page) ----
   var lastBtn = null;
