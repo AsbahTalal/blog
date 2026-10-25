@@ -9,7 +9,7 @@ permalink: /
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Asbah Talal | Mechanical &amp; Aerospace Engineering</title>
-<meta name="description" content="Asbah Talal, mechanical and aerospace engineering student at Oklahoma State University. Drones, star trackers, underwater robots, and flight payloads.">
+<meta name="description" content="Asbah Talal, mechanical and aerospace engineering student at Oklahoma State University. Drones, star trackers, flight payloads, and air quality research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -167,7 +167,7 @@ footer b{font-weight:400;color:var(--gold)}
   <div class="hero-text">
     <div class="loc"><span class="dot tw"></span><span>36.12°N · STILLWATER, OK</span></div>
     <h1>Howdy, I'm<br><em class="gold">Asbah Talal!</em></h1>
-    <p>I'm a sophomore studying Mechanical and Aerospace Engineering at Oklahoma State. I love building things that fly, dive, and track the stars.</p>
+    <p>I'm a sophomore studying Mechanical and Aerospace Engineering at Oklahoma State. I love building things that fly and track the stars.</p>
     <p>I work where hardware meets code: designing parts in CAD, wiring up the electronics, and writing the software that makes it all move.</p>
     <div><a class="btn-ghost" href="#work">Let's see some of my work →</a></div>
   </div>
@@ -190,7 +190,7 @@ footer b{font-weight:400;color:var(--gold)}
   <div class="sec-head">
     <span class="eyebrow">01 / SELECTED WORK</span>
     <h2>Engineering projects</h2>
-    <p>Drones, star trackers, underwater robots, flight payloads, and the research behind them.</p>
+    <p>Drones, star trackers, flight payloads, and the research behind them.</p>
   </div>
 
   <div class="projects">
@@ -223,29 +223,15 @@ footer b{font-weight:400;color:var(--gold)}
     </article>
 
     <article class="pcard reveal">
-      <div class="pimg">[AUV photo]</div>
+      <div class="pimg" style="background:#2E7A1F"><img src="{{ '/assets/images/sees/green-space-share.jpg' | relative_url }}" alt="Chart comparing green space share across California counties" loading="lazy" style="object-fit:contain"></div>
       <div class="pbody">
-        <div class="ptop"><span class="ptag">03 / MARINE ROBOTICS</span><span class="pstatus">● [STATUS]</span></div>
-        <h3>Autonomous Underwater Vehicle Team</h3>
-        <p>[What you built or designed on the AUV team, and what it does]</p>
-        <div class="chips"><span class="chip">[metric]</span><span class="chip">[metric]</span><span class="chip">[metric]</span></div>
+        <div class="ptop"><span class="ptag">03 / RESEARCH · AIR QUALITY</span><span class="pstatus">● PRESENTED</span></div>
+        <h3>NASA SEES: Green Space, PM2.5 &amp; Respiratory Illness</h3>
+        <p>Five-week NASA SEES Air Quality research project. We asked whether counties with more parks and water have cleaner air and less respiratory illness, using 7 years of EPA PM2.5 and hospital data for 15 California counties.</p>
+        <div class="chips"><span class="chip">15 counties</span><span class="chip">2016–2022</span><span class="chip">PM2.5 · COPD · pneumonia</span></div>
         <div class="pfoot">
-          <div class="tools"><span class="tool">[tool]</span><span class="tool">[tool]</span><span class="tool">MATLAB</span></div>
-          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
-        </div>
-      </div>
-    </article>
-
-    <article class="pcard reveal">
-      <div class="pimg">[AGU poster or air-quality map]</div>
-      <div class="pbody">
-        <div class="ptop"><span class="ptag">04 / RESEARCH · ATMOSPHERIC DATA</span><span class="pstatus">● PRESENTED</span></div>
-        <h3>NASA SEES: Nationwide Air Quality Modeling</h3>
-        <p>Research internship with the UT Austin Center for Space Research. Built Python statistical models of PM2.5 and ozone trends from PurpleAir sensors and NASA data across urban and rural regions.</p>
-        <div class="chips"><span class="chip">PM2.5 + ozone</span><span class="chip">urban vs rural</span><span class="chip">AGU 2024</span></div>
-        <div class="pfoot">
-          <div class="tools"><span class="tool">Python</span><span class="tool">Pandas</span><span class="tool">NumPy</span><span class="tool">Statistics</span></div>
-          <button class="btn-solid" type="button" data-open="pm-generic" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
+          <div class="tools"><span class="tool">EPA data</span><span class="tool">Data analysis</span><span class="tool">Visualization</span></div>
+          <button class="btn-solid" type="button" data-open="pm-sees" style="border:0;cursor:pointer;font-family:inherit">View project →</button>
         </div>
       </div>
     </article>
@@ -253,7 +239,7 @@ footer b{font-weight:400;color:var(--gold)}
     <article class="pcard reveal">
       <div class="pimg"><img src="{{ '/assets/images/IMG_3772.jpg' | relative_url }}" alt="Cubes in Space payload" loading="lazy"></div>
       <div class="pbody">
-        <div class="ptop"><span class="ptag">05 / FLIGHT HARDWARE</span><span class="pstatus">● FLOWN</span></div>
+        <div class="ptop"><span class="ptag">04 / FLIGHT HARDWARE</span><span class="pstatus">● FLOWN</span></div>
         <h3>NASA Cubes in Space: RF Payload</h3>
         <p>Designed an RF transceiver payload flown on a NASA scientific balloon, then analyzed post-flight data on radio-wave behavior at high altitude.</p>
         <div class="chips"><span class="chip">balloon-flown</span><span class="chip">RF transceiver</span><span class="chip">post-flight analysis</span></div>
@@ -453,6 +439,69 @@ footer b{font-weight:400;color:var(--gold)}
     </div>
 
     <div class="tools"><span class="tool">SolidWorks</span><span class="tool">3D Printing</span><span class="tool">Cycloidal drives</span><span class="tool">ESP32</span><span class="tool">TMC2209</span><span class="tool">HTML/CSS/JS</span></div>
+  </div>
+</dialog>
+
+<!-- NASA SEES popup -->
+<dialog class="pm" id="pm-sees" aria-labelledby="pm-sees-title">
+  <button class="pm-close" type="button" aria-label="Close" data-close>×</button>
+  <div class="pm-in">
+    <div class="pm-head">
+      <span class="ptag">03 / RESEARCH · AIR QUALITY · NASA SEES 2024</span>
+      <h2 id="pm-sees-title">Green Space, PM2.5 &amp; Respiratory Illness</h2>
+      <div class="chips"><span class="chip">● presented</span><span class="chip">summer 2024 · 5 weeks</span><span class="chip">with co-researcher Mina Chen</span></div>
+    </div>
+
+    <div class="gallery">
+      <div class="pm-main" style="background:#2E7A1F"><img src="{{ '/assets/images/sees/green-space-share.jpg' | relative_url }}" alt="Green space share chart"></div>
+      <p class="pm-cap">Green space as a share of county area: Bay Area counties reach ~20%, LA-area counties stay under ~7%</p>
+      <div class="thumbs" role="group" aria-label="Research charts">
+        <button type="button" aria-current="true" data-src="{{ '/assets/images/sees/green-space-share.jpg' | relative_url }}" data-cap="Green space as a share of county area: Bay Area counties reach ~20%, LA-area counties stay under ~7%"><img src="{{ '/assets/images/sees/green-space-share.jpg' | relative_url }}" alt="Green space share chart"></button>
+        <button type="button" data-src="{{ '/assets/images/sees/study-area.jpg' | relative_url }}" data-cap="Study area: 9 Bay Area counties and 6 Los Angeles-area counties, yearly from 2016 to 2022"><img src="{{ '/assets/images/sees/study-area.jpg' | relative_url }}" alt="Study area map"></button>
+        <button type="button" data-src="{{ '/assets/images/sees/green-over-10.jpg' | relative_url }}" data-cap="Counties with over 10% green space: PM2.5, COPD/asthma and pneumonia rates by year"><img src="{{ '/assets/images/sees/green-over-10.jpg' | relative_url }}" alt="Charts for counties over 10% green space"></button>
+        <button type="button" data-src="{{ '/assets/images/sees/green-under-2-5.jpg' | relative_url }}" data-cap="Counties with under 2.5% green space: the highest PM2.5 readings in the study"><img src="{{ '/assets/images/sees/green-under-2-5.jpg' | relative_url }}" alt="Charts for counties under 2.5% green space"></button>
+        <button type="button" data-src="{{ '/assets/images/sees/la-group-trends.jpg' | relative_url }}" data-cap="LA, Orange and Kern: respiratory case rates drop after 2020 while PM2.5 stays high"><img src="{{ '/assets/images/sees/la-group-trends.jpg' | relative_url }}" alt="LA-area trend charts"></button>
+        <button type="button" data-src="{{ '/assets/images/sees/rankings.jpg' | relative_url }}" data-cap="Rankings of each county on PM2.5 and illness measures, by group"><img src="{{ '/assets/images/sees/rankings.jpg' | relative_url }}" alt="County rankings charts"></button>
+      </div>
+    </div>
+
+    <div class="pm-body"><p>Fine particulate matter (PM2.5) is small enough to pass through the lungs into the bloodstream, and studies tie it to pneumonia and other respiratory illness. Other studies show parks and water absorb air pollution. Almost no one had connected the two at the county level, so we asked: <em>do counties with more green space have cleaner air and less respiratory illness?</em></p></div>
+
+    <div class="pm-grid">
+      <div class="pm-box">
+        <h3>DATA</h3>
+        <ul>
+          <li>Annual PM2.5 for each county from the U.S. EPA.</li>
+          <li>COPD and asthma cases (ages 40+) and community-acquired pneumonia cases from California's Department of Health Care Access and Information.</li>
+          <li>Park and open-water area from county parks departments, plus yearly county populations.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>METHOD</h3>
+        <ul>
+          <li>15 counties in two groups, 9 around San Francisco and 6 around Los Angeles, every year from 2016 to 2022.</li>
+          <li>Normalized illness counts by population so big and small counties compare fairly.</li>
+          <li>Grouped counties by green-space share (over 10%, 5–10%, under 5%, under 2.5%) and ranked each on every measure.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>WHAT WE SAW</h3>
+        <ul>
+          <li>The Bay Area group had far more green space, up to ~20% of county area in San Francisco.</li>
+          <li>The counties with under 2.5% green space (Kern, Riverside, San Bernardino) had the highest PM2.5, reaching ~15–22 µg/m³.</li>
+          <li>Respiratory case rates fell in most counties after 2020 even where PM2.5 stayed high, so other factors were clearly at play.</li>
+        </ul>
+      </div>
+      <div class="pm-box">
+        <h3>NEXT STEPS WE PLANNED</h3>
+        <ul>
+          <li>Difference-in-differences analysis in R to test for a causal link, not just a correlation.</li>
+          <li>GIS to measure green space and water area directly instead of relying on county websites.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools"><span class="tool">EPA &amp; state health data</span><span class="tool">Data cleaning</span><span class="tool">Normalization &amp; ranking</span><span class="tool">Data visualization</span></div>
   </div>
 </dialog>
 
