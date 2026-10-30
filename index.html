@@ -121,12 +121,6 @@ dialog.pm[open]{animation:pop .28s ease-out}
 /* carousel */
 .car-head{margin-bottom:24px}
 .car-head h2{margin:8px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:40px}
-.photo-grid{display:flex;flex-wrap:wrap;gap:16px}
-.photo-grid figure{margin:0;min-width:0;flex-grow:var(--ar);flex-basis:calc(var(--ar) * 240px);display:flex;flex-direction:column;gap:8px}
-.photo-grid .ph{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--well)}
-.photo-grid img{width:100%;height:auto;display:block;transition:transform .5s ease}
-.photo-grid figure:hover img{transform:scale(1.03)}
-@media (max-width:600px){.photo-grid{gap:20px}.photo-grid figure{flex:1 1 100%}}
 
 /* reads */
 .shelf{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;border-bottom:2px solid var(--text);padding-bottom:2px;margin:20px 0 8px}
@@ -311,31 +305,18 @@ footer b{font-weight:400;color:var(--gold)}
   </div>
 </section>
 
-<!-- PHOTOGRAPHY -->
-<section class="wrap section" aria-label="Photography">
-  <div class="car-head"><span class="eyebrow">THROUGH MY LENS</span><h2>Photography</h2></div>
-  <div class="photo-grid">
-    <figure style="--ar:0.74"><div class="ph"><img src="{{ '/assets/images/photos/kebab-stall.jpg' | relative_url }}" alt="A boy in a red jacket fanning coals at a kebab stall at night" loading="lazy"></div></figure>
-    <figure style="--ar:1.5"><div class="ph"><img src="{{ '/assets/images/photos/karachi-bus.jpg' | relative_url }}" alt="A decorated bus on route 4Q in front of a mosque in Karachi" loading="lazy"></div></figure>
-    <figure style="--ar:0.733"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-door.jpg' | relative_url }}" alt="Shoppers entering the blue doorway of Empress Market" loading="lazy"></div></figure>
-    <figure style="--ar:1.626"><div class="ph"><img src="{{ '/assets/images/photos/window-to-the-lake.jpg' | relative_url }}" alt="A beach, pier and sailboat framed by three windows" loading="lazy"></div></figure>
-    <figure style="--ar:0.685"><div class="ph"><img src="{{ '/assets/images/photos/brooklyn-bridge.jpg' | relative_url }}" alt="A sailboat passing under the Brooklyn Bridge" loading="lazy"></div></figure>
-    <figure style="--ar:1.5"><div class="ph"><img src="{{ '/assets/images/photos/water-lily.jpg' | relative_url }}" alt="A pale pink water lily among lily pads on dark water" loading="lazy"></div></figure>
-    <figure style="--ar:0.586"><div class="ph"><img src="{{ '/assets/images/photos/empress-market-tower.jpg' | relative_url }}" alt="The sandstone clock tower of Empress Market" loading="lazy"></div></figure>
-  </div>
-</section>
-
 <!-- CURRENT READS -->
 <section class="wrap section" aria-label="Current reads">
   <span class="eyebrow">CURRENT READS</span>
   <div class="shelf">
+    <div class="book" style="background:#1E2A44;color:#EDE6D6"><b>White Nights</b><i>F. DOSTOEVSKY</i></div>
     <div class="book" style="background:#3B2A4F;color:#F1E9FF"><b>Mistborn</b><i>B. SANDERSON</i></div>
     <div class="book" style="background:#E8E4DA;color:#1B1E26"><b>Flowers for Algernon</b><i>D. KEYES</i></div>
     <div class="book" style="background:#1F3A4A;color:#F2E6C9"><b>Piranesi</b><i>S. CLARKE</i></div>
     <div class="book" style="background:#C7372F;color:#FFF3E6"><b>Slaughter-house-Five</b><i>K. VONNEGUT</i></div>
     <div class="book" style="background:#A9B7C6;color:#14202C"><b>Pachinko</b><i>M. J. LEE</i></div>
   </div>
-  <span style="font-size:13px;color:var(--dim)">5 books</span>
+  <span style="font-size:13px;color:var(--dim)">6 books</span>
 </section>
 </main>
 
